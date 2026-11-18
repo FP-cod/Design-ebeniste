@@ -11,21 +11,23 @@ Repo central pour le scriptage Fusion 360 de la gamme de meubles érotiques haut
 ## Gammes et séries
 
 Chaque gamme = un langage visuel. Chaque série = un décor complet (meubles + accessoires assortis).
+Les séries sont ajoutées au fur et à mesure des itérations de design.
 
 | Gamme | Style | Séries |
 |-------|-------|--------|
-| **Obsidienne** | Salles de jeux dédiées | Série 1 : Banc Feuille · Série 2 : Néogothique |
+| **Obsidienne** | Salles de jeux dédiées | Série 1 : Banc Feuille (typologies : banc_feuille — le code local utilise banc_flore —, croix de Saint-André, chaise trône, tabouret) · Série 2 : Néogothique (Entrave) |
 | **Opale** | Dissimulés / transformables (pièces de vie) | À définir |
 | **Onyx** | Pliables, cachés sous le lit | À définir |
-| **Magnétite** | Accessoires (liens, colliers, floggers) + Aboutissants | À définir |
+| **Magnétite** | Accessoires (liens, colliers, floggers, menottes, harnais) | À définir |
 | **Émeraude** | Tantra / bien-être | À définir |
-| **Rangement** | Râteliers, armoires, coffres | À définir |
+| **Écrin** | Armoires, râteliers, coffres et supports d'accompagnement | À définir |
+| **Aboutissants** | Ports Vac-U-Lock, NPT 1", machines, collecteurs, points d'ancrage | À définir |
 
 ## Équipe d'agents
 
 - **Orchestrateur Design Ébénisterie** — pilote, priorise, synchronise catalogues
-- **Design** : Obsidienne, Opale, Onyx, Magnétite, Émeraude, Rangement
-- **Script** : Obsidienne, Opale, Onyx, Magnétite, Émeraude, Rangement
+- **Design** : Obsidienne, Opale, Onyx, Magnétite, Émeraude, Écrin
+- **Script** : Obsidienne, Opale, Onyx, Magnétite, Émeraude, Écrin
 - **Marché** : Étude de Marché, Benchmark Concurrentiel
 
 ## Règles

@@ -4,8 +4,41 @@
       "nom": "Obsidienne",
       "description": "Meubles pour salles de jeux dédiées",
       "series": [
-        {"id": "serie-1", "nom": "Banc Feuille", "statut": "en_cours"},
-        {"id": "serie-2", "nom": "Néogothique", "statut": "planifié"}
+        {
+          "id": "serie-1",
+          "nom": "Banc Feuille",
+          "statut": "en_cours",
+          "typologies": [
+            {
+              "id": "banc_feuille",
+              "nom": "Banc Feuille",
+              "nommage": "Le code local utilise l’identifiant banc_flore (/workspace/equinox)."
+            },
+            {
+              "id": "croix_saint_andre",
+              "nom": "Croix de Saint-André"
+            },
+            {
+              "id": "chaise_trone",
+              "nom": "Chaise trône"
+            },
+            {
+              "id": "tabouret",
+              "nom": "Tabouret"
+            }
+          ]
+        },
+        {
+          "id": "serie-2",
+          "nom": "Néogothique",
+          "statut": "en_cours",
+          "typologies": [
+            {
+              "id": "entrave",
+              "nom": "Entrave"
+            }
+          ]
+        }
       ]
     },
     "opale": {
@@ -20,7 +53,7 @@
     },
     "magnetite": {
       "nom": "Magnétite",
-      "description": "Accessoires (liens, colliers, floggers, aboutissants)",
+      "description": "Accessoires (liens, colliers, floggers, menottes, harnais)",
       "series": []
     },
     "emeraude": {
@@ -30,7 +63,12 @@
     },
     "ecrin": {
       "nom": "Écrin",
-      "description": "Armoires, râteliers et supports d’accompagnement",
+      "description": "Armoires, râteliers, coffres et supports d’accompagnement",
+      "series": []
+    },
+    "aboutissants": {
+      "nom": "Aboutissants",
+      "description": "Ports Vac-U-Lock, NPT 1\", machines, collecteurs, points d’ancrage",
       "series": []
     }
   }

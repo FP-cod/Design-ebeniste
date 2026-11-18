@@ -4,4 +4,4 @@ Portique et entraves en noyer, cuir noir, ferrures forgées. Même langage qu'Ob
 
 - Design : [Ébénisterie] Design Obsidienne
 - Script : [Ébénisterie] Script Obsidienne
-- Fichiers : `entave.py`, `portique.py` (à venir)
+- Fichiers : `entrave.py`, `portique.py` (à venir)
