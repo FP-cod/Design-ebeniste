@@ -1,0 +1,37 @@
+{
+  "gammes": {
+    "obsidienne": {
+      "nom": "Obsidienne",
+      "description": "Meubles pour salles de jeux dédiées",
+      "series": [
+        {"id": "serie-1", "nom": "Banc Feuille", "statut": "en_cours"},
+        {"id": "serie-2", "nom": "Néogothique", "statut": "planifié"}
+      ]
+    },
+    "opale": {
+      "nom": "Opale",
+      "description": "Meubles dissimulés / transformables pour pièces de vie",
+      "series": []
+    },
+    "onyx": {
+      "nom": "Onyx",
+      "description": "Meubles entièrement pliables qui se cachent sous le lit",
+      "series": []
+    },
+    "magnetite": {
+      "nom": "Magnétite",
+      "description": "Accessoires (liens, colliers, floggers, aboutissants)",
+      "series": []
+    },
+    "emeraude": {
+      "nom": "Émeraude",
+      "description": "Gamme tantra",
+      "series": []
+    },
+    "ecrin": {
+      "nom": "Écrin",
+      "description": "Armoires, râteliers et supports d’accompagnement",
+      "series": []
+    }
+  }
+}
