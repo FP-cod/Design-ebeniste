@@ -1,0 +1,7 @@
+# Obsidienne — Série 2 : Néogothique
+
+Portique et entraves en noyer, cuir noir, ferrures forgées. Même langage qu'Obsidienne mais esthétique médiévale.
+
+- Design : [Ébénisterie] Design Obsidienne
+- Script : [Ébénisterie] Script Obsidienne
+- Fichiers : `entave.py`, `portique.py` (à venir)

@@ -1,55 +1,35 @@
-# Design Ébéniste
+# Design Ébénisterie
 
-Système de design paramétrique pour gammes de mobilier ébénisterie (Fusion 360).
+Repo central pour le scriptage Fusion 360 de la gamme de meubles érotiques haut de gamme.
 
 ## Architecture en 3 couches
 
-1. **Paramètres globaux** (`parametres/`) — Vocabulaire partagé de la gamme (dimensions, essences, finitions, angles…).
-2. **Catalogues** (`catalogues/`) — Matériaux, fixations, règles de recalcul automatique.
-3. **Scripts de grammaire** (`scripts/`) — Un dossier par gamme / typologie de meuble. Chaque script importe les paramètres et catalogues.
+1. **parametres/** — vocabulaire partagé (dimensions, matériaux, fixations)
+2. **catalogues/** — essences, cuirs, métaux, fixations (clés référencées par les scripts)
+3. **scripts/** — grammaire par gamme, organisée en séries
 
-## Nomenclature des gammes
+## Gammes et séries
 
-| Gamme | Style | Usage |
-|---|---|---|
-| **Obsidienne** | Salles de jeux dédiées (reprend Equinox + Néogothique) | Bancs, entraves, piloris, meubles assumés |
-| **Opale** | Meubles dissimulés / transformables (reprend Incognito) | Pièces de vie, canapés, banquettes, poufs vibrants |
-| **Onyx** | Meubles entièrement pliables | Se cachent sous le lit |
-| **Magnétite** | Accessoires (reprend Cuir + Aboutissants) | Liens, colliers, floggers, ports Vac-U-Lock / NPT, machines, collecteurs |
-| **Émeraude** | Gamme tantra (reprise de Tantra) | Fauteuils tantriques fixes |
-| **Rangement** | Armoires, râteliers, coffres | Salles de jeux |
+Chaque gamme = un langage visuel. Chaque série = un décor complet (meubles + accessoires assortis).
 
-## Organisation des agents
+| Gamme | Style | Séries |
+|-------|-------|--------|
+| **Obsidienne** | Salles de jeux dédiées | Série 1 : Banc Feuille · Série 2 : Néogothique |
+| **Opale** | Dissimulés / transformables (pièces de vie) | À définir |
+| **Onyx** | Pliables, cachés sous le lit | À définir |
+| **Magnétite** | Accessoires (liens, colliers, floggers) + Aboutissants | À définir |
+| **Émeraude** | Tantra / bien-être | À définir |
+| **Rangement** | Râteliers, armoires, coffres | À définir |
 
-### Design (esthétique, ergonomie, proportions)
-- [Ébénisterie] Design Obsidienne
-- [Ébénisterie] Design Opale
-- [Ébénisterie] Design Onyx
-- [Ébénisterie] Design Magnétite
-- [Ébénisterie] Design Émeraude
-- [Ébénisterie] Design Rangement
+## Équipe d'agents
 
-### Script Fusion (code API Python Fusion 360)
-- [Ébénisterie] Script Obsidienne
-- [Ébénisterie] Script Opale
-- [Ébénisterie] Script Onyx
-- [Ébénisterie] Script Magnétite
-- [Ébénisterie] Script Émeraude
-- [Ébénisterie] Script Rangement
+- **Orchestrateur Design Ébénisterie** — pilote, priorise, synchronise catalogues
+- **Design** : Obsidienne, Opale, Onyx, Magnétite, Émeraude, Rangement
+- **Script** : Obsidienne, Opale, Onyx, Magnétite, Émeraude, Rangement
+- **Marché** : Étude de Marché, Benchmark Concurrentiel
 
-### Pilotage
-- [Ébénisterie] Orchestrateur Design Ébénisterie
+## Règles
 
-### Étude de marché
-- [Ébénisterie] Étude de Marché
-- [Ébénisterie] Benchmark Concurrentiel
-
-## Jonctions ébénisterie
-
-Tourillons et mortaises (pas de vis apparentes). Tolérances de jonction à définir dans `parametres/`.
-
-## Repo
-
-- `parametres/` — paramètres globaux partagés
-- `catalogues/` — bois, cuirs, métaux, fixations
-- `scripts/{gamme}/` — scripts Fusion par gamme
+- Jamais de valeur en dur dans un script : tout passe par `parametres/` ou `catalogues/`
+- Un changement de teinte ou d'essence se fait à un seul endroit
+- Les jonctions : tourillons par défaut, mortaise-tenon pour les angles droits critiques
