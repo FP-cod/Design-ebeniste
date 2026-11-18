@@ -1,0 +1,18 @@
+{
+  "cognac": {
+    "type": "pleine_fleur",
+    "epaisseur_mm": 1.4,
+    "cout_m2": 85,
+    "regles": {
+      "epaisseur_rembourrage": 30
+    }
+  },
+  "noir": {
+    "type": "pleine_fleur",
+    "epaisseur_mm": 1.5,
+    "cout_m2": 90,
+    "regles": {
+      "epaisseur_rembourrage": 28
+    }
+  }
+}

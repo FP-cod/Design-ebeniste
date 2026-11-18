@@ -1,0 +1,37 @@
+{
+  "dimensions": {
+    "hauteur_assise_standard": 700,
+    "longueur_plateau_buste": 1150,
+    "largeur_hors_tout": 520,
+    "splay_pieds_deg": 7
+  },
+  "bois": {
+    "essence_defaut": "frene",
+    "diametre_section_noeud": 50,
+    "diametre_section_extremite": 30,
+    "rayon_courbure_min": 80,
+    "finition": "mate_naturelle"
+  },
+  "cuir": {
+    "epaisseur_rembourrage": 30,
+    "inclinaison_plateau_deg": 2,
+    "teinte_defaut": "cognac",
+    "type_couture": "invisible"
+  },
+  "metal": {
+    "diametre_tube_helice": 12,
+    "pas_helice_tours": 2,
+    "nombre_crans_verrouillage": 2,
+    "diametre_oeillet": 8,
+    "epaisseur_plaque": 2
+  },
+  "laiton": {
+    "diametre_capuchon_pied": 40,
+    "epaisseur_capuchon": 3
+  },
+  "traverse_lest": {
+    "section_tube_carre": 40,
+    "poids_lest_kg": 18,
+    "position_logement": "interieur_pied_arriere"
+  }
+}

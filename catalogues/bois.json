@@ -1,0 +1,23 @@
+{
+  "frene": {
+    "densite": 680,
+    "module_elasticite": 12000,
+    "resistance_flexion": 100,
+    "cout_m3": 1200,
+    "origine": "France"
+  },
+  "chene": {
+    "densite": 720,
+    "module_elasticite": 11000,
+    "resistance_flexion": 95,
+    "cout_m3": 1800,
+    "origine": "France"
+  },
+  "noyer": {
+    "densite": 640,
+    "module_elasticite": 10000,
+    "resistance_flexion": 85,
+    "cout_m3": 2500,
+    "origine": "France"
+  }
+}

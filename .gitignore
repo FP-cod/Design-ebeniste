@@ -1,0 +1,6 @@
+# Fusion temp files
+*.f3d
+*.f3z
+__pycache__/
+*.pyc
+.DS_Store
