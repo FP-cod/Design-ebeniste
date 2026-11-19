@@ -1,0 +1,107 @@
+{
+  "bois": {
+    "essence": "chene",
+    "finition": "cire_naturelle",
+    "humidite_cible": 10.0
+  },
+  "charges": {
+    "charge_crochet": 3.0,
+    "charge_etagere": 40.0,
+    "charge_lineaire_barre": 10.0,
+    "charge_tiroir": 15.0,
+    "effort_accidentel": 300.0,
+    "longueur_instrument_suspendu": 500.0
+  },
+  "cuir": {
+    "epaisseur": 1.8,
+    "famille": "cuir_classique_pleine_fleur",
+    "teinte": "noir"
+  },
+  "discretion": {
+    "cuir_visible_ferme": false,
+    "epaisseur_cache": 10.0,
+    "jeu_mecanique": 2.0,
+    "niveau": "discret",
+    "recul_mortaise_charniere": 8.0,
+    "retrait_min_ancre": 10.0
+  },
+  "gamme": {
+    "nom": "Rangement",
+    "prefixe_fusion": "ran_"
+  },
+  "jonctions": {
+    "alesage_chant": 20.0,
+    "diametre_tourillon": 8.0,
+    "epaisseur_tenon": 7.0,
+    "longueur_tourillon": 40.0,
+    "profondeur_mortaise": 17.6,
+    "type_caisson": "tourillons"
+  },
+  "modules": {
+    "diametre_trous_taquets": 5.0,
+    "hauteur_armoire": 1800.0,
+    "hauteur_coffre": 440.0,
+    "module_hauteur": 320.0,
+    "module_largeur": 600.0,
+    "pas_trous": 32.0,
+    "profondeur_armoire": 450.0,
+    "profondeur_coffre": 450.0,
+    "recul_trous_avant": 37.0
+  },
+  "panneaux": {
+    "epaisseur_caisson": 18.0,
+    "epaisseur_etagere": 22.0,
+    "epaisseur_fond": 8.0,
+    "epaisseur_panneau_mural": 22.0,
+    "epaisseur_porte": 22.0,
+    "epaisseur_support_garni": 18.0,
+    "lamage_lecteur": 6.0
+  },
+  "ports": {
+    "degagement_accessoire": 120.0,
+    "epaulement_diametre": 50.0,
+    "epaulement_epaisseur": 8.0,
+    "filetage_ergot": "M8x1.25",
+    "filetage_ergot_longueur": 16.0,
+    "fond_mini_douille": 6.0,
+    "montage_arriere": "npt_1_male",
+    "npt": true,
+    "npt_depassement": 25.0,
+    "npt_diametre_exterieur": 33.401,
+    "npt_longueur_totale": 25.006,
+    "npt_longueur_utile": 17.343,
+    "npt_paroi_douille": 4.0,
+    "paroi_bois_mini": 12.0,
+    "pas_ports": 200.0,
+    "plug_diametre_tete": 31.75,
+    "plug_diametre_tige": 19.05,
+    "plug_longueur": 76.2,
+    "vac_u_lock": true,
+    "verrouillage_actif": false
+  },
+  "pose": {
+    "anti_basculement": true,
+    "capacite_support_mur": null
+  },
+  "quincaillerie": {
+    "filetage_insert": "M8",
+    "finition_metal": "inox_electropoli",
+    "longueur_insert": 20.0,
+    "metal": "inox_316"
+  },
+  "securite": {
+    "coefficient_dynamique": 2.0,
+    "fleche_admissible": 300.0,
+    "securite_metal": 1.8,
+    "securite_renversement": 1.5
+  },
+  "systemes": {
+    "barre": "tube_inox_20",
+    "crochet": "crochet_inox_double",
+    "etagere": "taquets_systeme_32",
+    "port": "port_vac_u_lock_npt",
+    "porte": "battante_charniere_soss",
+    "serrure": "serrure_came",
+    "tiroir": "glissiere_invisible_amortie"
+  }
+}

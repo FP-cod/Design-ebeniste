@@ -1,0 +1,109 @@
+ENTRAVE COU-POIGNETS - gamme Neogothique (v0.2.0, style raffine)
+Essence noyer | cuir cuir_sellier_fin_noir | ferrures fer_forge_mat (cire_noire) | pieds carre 100 mm | pivot cou axe_vertical_chape
+Cran 0 / 6 -> hauteur platine 300 mm (crans : 300, 325, 350, 375, 400, 425, 450)
+Debattement 150 mm = 6 intervalles x 25 mm (convention 'positions')
+STYLE : proportions 'nombre_or' -> pied visible 186 mm = plinthe 27.1 + fut 115.0 + chapiteau 43.9 mm ; colonne 100 (fut bas) / 94 (fut haut) / 124 (plinthe, abaque) mm
+       chanfreins arretes 8 mm, arret droit a 18 mm des extremites du fut
+       platine : chant dessus conge 4, dessous bec_de_corbin 31 x 14 mm ; ceinture 5 baies 'ogive' de 54 mm, montants 43.9 mm
+       ferrures : fer plat 28 x 4, pentures 160 mm en 'fleur_de_lys', rivets 5 a tete goutte de suif 8 x 3, habillage cremaillere 'capot_ajoure', barre 'lisse'
+       sellerie : point sellier_double, pas 3.2 mm, fil lin_cire 0.55 mm, filet a 3 mm, tranches teintees_lustrees, rembourrage 3 mm ; coussin oui (matelassage losange, 47 cellules)
+Coulisseau 61 mm, longueur 227 mm ; fourreau 186 mm de haut ; recouvrement en haut 67 mm
+Synchro : module 3, pignon z=16 (d primitif 48 mm), 150.8 mm de course par tour (0.99 tour pour la course), arbres a z=188 mm, mode quatre_points
+Calage : barre 236 mm (passe hors semelle), loquet sur le fut a z=175 mm, trous de crans a 15, 40, 65, 90, 115, 140, 165 mm du bas de barre
+Masses : mobile 23.8 kg, fixe 19.4 kg, lest 0.0 kg, total 43.3 kg
+Corps : 190 (56 blocs moulures, 40 revolutions)
+Jonctions :
+  - coulisseau -> platine : Tenon traversant a coins (wedged through tenon) (x4) coins=2, epaulement=20, mortaise_epaisseur=21.2, pente_coin=0.125, tenon_epaisseur=21, tenon_largeur=48, tenon_longueur=50
+      Mortaises des 2 coulisseaux arriere OBLONGUES en Y (+2.0 mm) : dilatation transversale de la platine massive (1.78 mm calcules) ; tenons avant fixes.
+  - fourreau -> semelle : Tenon traversant cheville a tire (drawbore) (x4) cheville_diametre=7, decalage_drawbore=1.5, epaulement=0, mortaise_epaisseur=15.2, nombre_chevilles=2, nombre_tenons_jumeles=2, tenon_epaisseur=15, tenon_largeur=80, tenon_longueur=54
+      Pied-colonne creux : deux tenons jumeles (un par joue pleine, epaisseur = paroi) sous la plinthe, traversant la semelle ; le coulisseau descend entre eux dans le logement.
+  - traverse basse -> semelles : Tenon traversant a clef (tusk tenon, demontable) (x2) clef_epaisseur=12, epaulement=20, hauteur_retenue=34, mortaise_epaisseur=20.2, saillie=45, tenon_epaisseur=20, tenon_largeur=42, tenon_longueur=140
+      Tenon a clef : demontage de l'Entrave en 3 sous-ensembles sans outil.
+  - demi-fourreaux (joues rainurees) : Tourillons cannelés (hetre ou chene) (x4) diametre=6, diametre_max=7, par_piece=6, profondeur=15
+      Deux demi-colonnes rainurees collees + 6 tourillons par pied ; la moulure (plinthe, astragale, chapiteau) est usinee APRES collage pour des onglets continus.
+  - ceinture -> platine : Ceinture embrevee + tourillons (x2) diametre=6
+      Ceinture embrevee de 6 mm dans une rainure de sous-face et tourillonnee ; trous oblongs vers l'avant/arriere (dilatation de la platine). Pas de colle sur la longueur.
+  - ferrures -> bois : Rivets forges a tete goutte de suif et contre-plaque (xNone) diametre=5
+      Toutes les ferrures (pentures, platines de pivot, brides, paliers, equerres, capots) : rivets traversants, tete 8 x 3 mm bouterollee, zero vis.
+Verifications :
+  !! Renversement (traction 500 N x 1.50, direction Y, a z=558 mm) : 0.2867 (Ms/Mr) (limite 1 (Ms/Mr), marge x0.29) - Ms=120 N.m (masse 43.3 kg, levier 282 mm) / Mr=418 N.m ; stable UNIQUEMENT ancre : 313 N par anneau (capacite 2000 N)
+      -> Ancrer au sol (anneaux sous semelles) ou ajouter 108 kg de lest bas ; elargir les semelles aide aussi.
+  !! Renversement (traction 500 N x 1.50, direction X, a z=558 mm) : 0.3835 (Ms/Mr) (limite 1 (Ms/Mr), marge x0.38) - Ms=160 N.m (masse 43.3 kg, levier 378 mm) / Mr=418 N.m ; stable UNIQUEMENT ancre : 209 N par anneau (capacite 2000 N)
+      -> Ancrer au sol (anneaux sous semelles) ou ajouter 70 kg de lest bas ; elargir les semelles aide aussi.
+  !! Glissement au sol : 750 N (limite 127.3 N, marge x0.17) - frottement mu=0.30 x 424 N
+      -> Patins antiderapants ou ancrage au sol.
+  OK Flexion platine moulee (noyer, portee 616 mm) : 2.197 MPa (limite 16.62 MPa, marge x7.56) - M=P.L/4, P=2250 N ; module de section reel 158 cm3 (-5.3 % vs rectangle : chants conge / bec_de_corbin)
+  OK Fleche platine moulee : 0.2528 mm (limite 2.053 mm, marge x8.12) - f = P.L^3/(48.E.I), E=10800 MPa, I reel 4.01e+06 mm4
+  OK Cisaillement du pene (2 loquets porteurs, fer_forge_mat) : 5.49 MPa (limite 123.3 MPa, marge x22.47) - F=1242 N par pene, double cisaillement barre/gache
+  OK Matage du cran dans la barre de calage : 12.94 MPa (limite 427.3 MPa, marge x33.03) - sigma = F/(d.t), admissible ~2 Re/gamma
+  OK Ligament entre deux crans : 5.97 MPa (limite 123.3 MPa, marge x20.66) - 2 plans de cisaillement de 13.0 x 8 mm
+  OK Traction de la barre au droit d'un cran (decor lisse) : 12.94 MPa (limite 213.6 MPa, marge x16.51) - 2 joues nettes de 6.0 mm x 8 mm (largeur 24, -0 % de decor)
+  OK Dent de pignon (Lewis, z=16, m=3) : 9.87 MPa (limite 142.4 MPa, marge x14.43) - Ft=175 N, Y=0.296 ; pignons/cremailleres dentees toujours en acier
+  OK Torsion arbre de synchronisation : 5.231 MPa (limite 123.3 MPa, marge x23.58) - T=4.2 N.m
+  !! Recouvrement coulisseau/fourreau en position haute : 1.098 x section (limite 1.5 x section, marge x0.73) - 67 mm pour un coulisseau de 61 mm (jeu 1.5 mm => ballant 2.56 deg) ; matage 1.08 MPa (adm. 4.31)
+      -> Pieds courts + course 150 mm : passer hauteur_mini a >= 315 mm (course 135 mm) OU ajouter des patins laiton reglables dans le fourreau (jeu ~0,3 mm). Les loquets engages reprennent une partie du ballant.
+  OK Paroi du pied dans l'arete (carre, chanfrein 8) : 17.21 mm (limite 12 mm, marge x1.43) - au haut du fut (section la plus fine) ; paroi sur plats 15.0 mm
+  OK Montants de la ceinture ajouree (ogive) : 43.92 mm (limite 14 mm, marge x3.14) - 5 baies de 53.7 mm sur 488 mm
+  OK Manille cou (ame porteuse) : 750 N (limite 1500 N, marge x2.00) - ame textile 6000 N / gamma 4.0
+  OK Manille poignet (ame porteuse) : 750 N (limite 1500 N, marge x2.00) - ame textile 6000 N / gamma 4.0
+  OK Axe de pivot de la manille de cou (axe_vertical_chape) : 134.3 MPa (limite 213.6 MPa, marge x1.59) - M=76.9 N.m (levier 102 mm), d=18 mm
+  OK Rivets traversants de la platine de pivot : 39.95 MPa (limite 213.6 MPa, marge x5.35) - 4 rivets, 2 tendus, 784 N chacun
+  OK Axe du gond de manille (double cisaillement) : 7.46 MPa (limite 123.3 MPa, marge x16.53) - F=750 N, d=8 mm
+  OK Chevilles fourreau/semelle (arrachement, 4 x d=7 mm) : 967.9 N (limite 1658 N, marge x1.71) - effort de soulevement par pied 968 N, capacite 1658 N (paroi 15 mm => cheville <= paroi/2)
+  OK Marge mini des ferrures affinees (axe_pivot) : 1.591  (limite 1.5 , marge x1.06) - 9 verifications de ferrures
+
+==============================================================================
+
+ENTRAVE COU-POIGNETS - gamme Neogothique (v0.2.0, style raffine)
+Essence noyer | cuir cuir_sellier_fin_noir | ferrures fer_forge_mat (cire_noire) | pieds carre 100 mm | pivot cou axe_vertical_chape
+Cran 6 / 6 -> hauteur platine 450 mm (crans : 300, 325, 350, 375, 400, 425, 450)
+Debattement 150 mm = 6 intervalles x 25 mm (convention 'positions')
+STYLE : proportions 'nombre_or' -> pied visible 186 mm = plinthe 27.1 + fut 115.0 + chapiteau 43.9 mm ; colonne 100 (fut bas) / 94 (fut haut) / 124 (plinthe, abaque) mm
+       chanfreins arretes 8 mm, arret droit a 18 mm des extremites du fut
+       platine : chant dessus conge 4, dessous bec_de_corbin 31 x 14 mm ; ceinture 5 baies 'ogive' de 54 mm, montants 43.9 mm
+       ferrures : fer plat 28 x 4, pentures 160 mm en 'fleur_de_lys', rivets 5 a tete goutte de suif 8 x 3, habillage cremaillere 'capot_ajoure', barre 'lisse'
+       sellerie : point sellier_double, pas 3.2 mm, fil lin_cire 0.55 mm, filet a 3 mm, tranches teintees_lustrees, rembourrage 3 mm ; coussin oui (matelassage losange, 47 cellules)
+Coulisseau 61 mm, longueur 227 mm ; fourreau 186 mm de haut ; recouvrement en haut 67 mm
+Synchro : module 3, pignon z=16 (d primitif 48 mm), 150.8 mm de course par tour (0.99 tour pour la course), arbres a z=188 mm, mode quatre_points
+Calage : barre 236 mm (passe hors semelle), loquet sur le fut a z=175 mm, trous de crans a 15, 40, 65, 90, 115, 140, 165 mm du bas de barre
+Masses : mobile 23.8 kg, fixe 19.4 kg, lest 0.0 kg, total 43.3 kg
+Corps : 190 (56 blocs moulures, 40 revolutions)
+Jonctions :
+  - coulisseau -> platine : Tenon traversant a coins (wedged through tenon) (x4) coins=2, epaulement=20, mortaise_epaisseur=21.2, pente_coin=0.125, tenon_epaisseur=21, tenon_largeur=48, tenon_longueur=50
+      Mortaises des 2 coulisseaux arriere OBLONGUES en Y (+2.0 mm) : dilatation transversale de la platine massive (1.78 mm calcules) ; tenons avant fixes.
+  - fourreau -> semelle : Tenon traversant cheville a tire (drawbore) (x4) cheville_diametre=7, decalage_drawbore=1.5, epaulement=0, mortaise_epaisseur=15.2, nombre_chevilles=2, nombre_tenons_jumeles=2, tenon_epaisseur=15, tenon_largeur=80, tenon_longueur=54
+      Pied-colonne creux : deux tenons jumeles (un par joue pleine, epaisseur = paroi) sous la plinthe, traversant la semelle ; le coulisseau descend entre eux dans le logement.
+  - traverse basse -> semelles : Tenon traversant a clef (tusk tenon, demontable) (x2) clef_epaisseur=12, epaulement=20, hauteur_retenue=34, mortaise_epaisseur=20.2, saillie=45, tenon_epaisseur=20, tenon_largeur=42, tenon_longueur=140
+      Tenon a clef : demontage de l'Entrave en 3 sous-ensembles sans outil.
+  - demi-fourreaux (joues rainurees) : Tourillons cannelés (hetre ou chene) (x4) diametre=6, diametre_max=7, par_piece=6, profondeur=15
+      Deux demi-colonnes rainurees collees + 6 tourillons par pied ; la moulure (plinthe, astragale, chapiteau) est usinee APRES collage pour des onglets continus.
+  - ceinture -> platine : Ceinture embrevee + tourillons (x2) diametre=6
+      Ceinture embrevee de 6 mm dans une rainure de sous-face et tourillonnee ; trous oblongs vers l'avant/arriere (dilatation de la platine). Pas de colle sur la longueur.
+  - ferrures -> bois : Rivets forges a tete goutte de suif et contre-plaque (xNone) diametre=5
+      Toutes les ferrures (pentures, platines de pivot, brides, paliers, equerres, capots) : rivets traversants, tete 8 x 3 mm bouterollee, zero vis.
+Verifications :
+  !! Renversement (traction 500 N x 1.50, direction Y, a z=558 mm) : 0.2867 (Ms/Mr) (limite 1 (Ms/Mr), marge x0.29) - Ms=120 N.m (masse 43.3 kg, levier 282 mm) / Mr=418 N.m ; stable UNIQUEMENT ancre : 313 N par anneau (capacite 2000 N)
+      -> Ancrer au sol (anneaux sous semelles) ou ajouter 108 kg de lest bas ; elargir les semelles aide aussi.
+  !! Renversement (traction 500 N x 1.50, direction X, a z=558 mm) : 0.3835 (Ms/Mr) (limite 1 (Ms/Mr), marge x0.38) - Ms=160 N.m (masse 43.3 kg, levier 378 mm) / Mr=418 N.m ; stable UNIQUEMENT ancre : 209 N par anneau (capacite 2000 N)
+      -> Ancrer au sol (anneaux sous semelles) ou ajouter 70 kg de lest bas ; elargir les semelles aide aussi.
+  !! Glissement au sol : 750 N (limite 127.3 N, marge x0.17) - frottement mu=0.30 x 424 N
+      -> Patins antiderapants ou ancrage au sol.
+  OK Flexion platine moulee (noyer, portee 616 mm) : 2.197 MPa (limite 16.62 MPa, marge x7.56) - M=P.L/4, P=2250 N ; module de section reel 158 cm3 (-5.3 % vs rectangle : chants conge / bec_de_corbin)
+  OK Fleche platine moulee : 0.2528 mm (limite 2.053 mm, marge x8.12) - f = P.L^3/(48.E.I), E=10800 MPa, I reel 4.01e+06 mm4
+  OK Cisaillement du pene (2 loquets porteurs, fer_forge_mat) : 5.49 MPa (limite 123.3 MPa, marge x22.47) - F=1242 N par pene, double cisaillement barre/gache
+  OK Matage du cran dans la barre de calage : 12.94 MPa (limite 427.3 MPa, marge x33.03) - sigma = F/(d.t), admissible ~2 Re/gamma
+  OK Ligament entre deux crans : 5.97 MPa (limite 123.3 MPa, marge x20.66) - 2 plans de cisaillement de 13.0 x 8 mm
+  OK Traction de la barre au droit d'un cran (decor lisse) : 12.94 MPa (limite 213.6 MPa, marge x16.51) - 2 joues nettes de 6.0 mm x 8 mm (largeur 24, -0 % de decor)
+  OK Dent de pignon (Lewis, z=16, m=3) : 9.87 MPa (limite 142.4 MPa, marge x14.43) - Ft=175 N, Y=0.296 ; pignons/cremailleres dentees toujours en acier
+  OK Torsion arbre de synchronisation : 5.231 MPa (limite 123.3 MPa, marge x23.58) - T=4.2 N.m
+  !! Recouvrement coulisseau/fourreau en position haute : 1.098 x section (limite 1.5 x section, marge x0.73) - 67 mm pour un coulisseau de 61 mm (jeu 1.5 mm => ballant 2.56 deg) ; matage 1.08 MPa (adm. 4.31)
+      -> Pieds courts + course 150 mm : passer hauteur_mini a >= 315 mm (course 135 mm) OU ajouter des patins laiton reglables dans le fourreau (jeu ~0,3 mm). Les loquets engages reprennent une partie du ballant.
+  OK Paroi du pied dans l'arete (carre, chanfrein 8) : 17.21 mm (limite 12 mm, marge x1.43) - au haut du fut (section la plus fine) ; paroi sur plats 15.0 mm
+  OK Montants de la ceinture ajouree (ogive) : 43.92 mm (limite 14 mm, marge x3.14) - 5 baies de 53.7 mm sur 488 mm
+  OK Manille cou (ame porteuse) : 750 N (limite 1500 N, marge x2.00) - ame textile 6000 N / gamma 4.0
+  OK Manille poignet (ame porteuse) : 750 N (limite 1500 N, marge x2.00) - ame textile 6000 N / gamma 4.0
+  OK Axe de pivot de la manille de cou (axe_vertical_chape) : 134.3 MPa (limite 213.6 MPa, marge x1.59) - M=76.9 N.m (levier 102 mm), d=18 mm
+  OK Rivets traversants de la platine de pivot : 39.95 MPa (limite 213.6 MPa, marge x5.35) - 4 rivets, 2 tendus, 784 N chacun
+  OK Axe du gond de manille (double cisaillement) : 7.46 MPa (limite 123.3 MPa, marge x16.53) - F=750 N, d=8 mm
+  OK Chevilles fourreau/semelle (arrachement, 4 x d=7 mm) : 967.9 N (limite 1658 N, marge x1.71) - effort de soulevement par pied 968 N, capacite 1658 N (paroi 15 mm => cheville <= paroi/2)
+  OK Marge mini des ferrures affinees (axe_pivot) : 1.591  (limite 1.5 , marge x1.06) - 9 verifications de ferrures

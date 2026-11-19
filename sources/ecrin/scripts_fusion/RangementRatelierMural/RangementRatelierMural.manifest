@@ -1,0 +1,8 @@
+{
+  "autodeskProduct": "Fusion360",
+  "type": "script",
+  "author": "Rangement",
+  "description": {"": "Rangement - grammaire ratelier mural modulaire (barres, crochets, ports Aboutissants)"},
+  "supportedOS": "windows|mac",
+  "editEnabled": true
+}

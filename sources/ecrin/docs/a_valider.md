@@ -1,0 +1,125 @@
+# Points À VALIDER / TODO (généré)
+
+## Paramètres
+
+- `gamme.prefixe_fusion` = ran_ (**À VALIDER**) — Aligne sur eq_ / neo_ / inc_ / abo_ / tan_ (Tantra) / gc_ (GammeCuir).
+- `modules.pas_trous` = 32 (**À VALIDER**) — Systeme 32 (standard industriel europeen) ; absent des autres gammes.
+- `modules.recul_trous_avant` = 37 (**À VALIDER**) — Valeur usuelle du systeme 32 ; a confirmer avec les charnieres retenues.
+- `modules.diametre_trous_taquets` = 5 (**À VALIDER**) — Taquets O5 courants ; aucun taquet dans les autres gammes.
+- `modules.module_largeur` = 600 (**À VALIDER**) — 600 mm : 2 a 4 crochets ou 2 ports au pas de 200 par module ; portee de barre courte (flexion faible). Proposition.
+- `modules.module_hauteur` = 320 (**À VALIDER**) — 10 x 32 mm : trame verticale commune aux rateliers et aux armoires.
+- `modules.hauteur_armoire` = 1800 (**À VALIDER**) — Accessible sans escabeau ; au-dela de ~1600 mm fixation anti-basculement obligatoire (verifiee par regles).
+- `modules.profondeur_armoire` = 450 (**À VALIDER**) — Accepte des glissieres de 400 mm et des paddles a plat. Proposition.
+- `modules.profondeur_coffre` = 450 (**À VALIDER**) — Proposition (coffre-banc).
+- `panneaux.epaisseur_etagere` = 22 (**À VALIDER**) — Proposition ; la fleche est verifiee par regles.
+- `panneaux.epaisseur_fond` = 8 (**À VALIDER**) — Proposition.
+- `panneaux.epaisseur_panneau_mural` = 22 (**À VALIDER**) — Recoit inserts M8 (20 mm), consoles tenonnees et douilles NPT.
+- `panneaux.lamage_lecteur` = 6 (**À VALIDER**) — Permet de garder une porte de 22 mm (charnieres Soss) tout en restant sous l'epaisseur de lecture ; le bois restant doit garder le retrait de discretion de 10 mm (Incognito).
+- `bois.essence` = chene (**À VALIDER**) — Chene : defaut d'Incognito, de Neogothique et de Tantra (essence de reference), defini dans les 5 gammes a meubles. Equinox est en frene. Choix a trancher par Fabien.
+- `bois.finition` = cire_naturelle (**À VALIDER**) — Compatible avec toutes les essences ; l'interieur des armoires peut passer en vernis_pu_mat (Tantra : nettoyabilite 5/5, lessivable).
+- `cuir.famille` = cuir_classique_pleine_fleur (**À VALIDER**) — Cuir de reference Equinox (noir, cognac, havane, vert bouteille, bleu nuit), assorti a la vachette vegetale de GammeCuir (memes teintes + tan, bordeaux, brun fonce).
+- `cuir.teinte` = noir (**À VALIDER**) — Noir : seule teinte presente dans les 5 gammes (Equinox, Neogothique, Incognito, Tantra, GammeCuir) ; cognac est dans 4 (pas Neogothique).
+- `quincaillerie.finition_metal` = inox_electropoli (**À VALIDER**) — Electropolissage/passivation conseilles par Aboutissants pour l'hygiene.
+- `charges.charge_crochet` = 3 (**À VALIDER**) — Une paire de menottes acier ou un paddle : < 1,5 kg ; marge x2. Proposition.
+- `charges.charge_lineaire_barre` = 10 (**À VALIDER**) — Martinets, cravaches, sangles serres sur la barre. Proposition.
+- `charges.charge_etagere` = 40 (**À VALIDER**) — Accessoires et cordes, pas de livres. Proposition a recouper avec EN 16121 / EN 16122 (non consultees).
+- `charges.charge_tiroir` = 15 (**À VALIDER**) — Proposition ; a comparer a la fiche des glissieres.
+- `charges.effort_accidentel` = 300 (**À VALIDER**) — ~30 kg : chute evitee de justesse. Verifiee en ALERTE (deformation), un ratelier n'est PAS un point d'ancrage de personne.
+- `charges.longueur_instrument_suspendu` = 500 (**À VALIDER**) — Proposition ; sert a eviter que les instruments masquent les crochets.
+- `discretion.niveau` = discret (**À VALIDER**) — 'invisible' applique les regles Incognito (zero cuir, zero ferrure visibles).
+- `discretion.cuir_visible_ferme` = non (**À VALIDER**) — Incompatible avec niveau 'invisible' (regle Incognito).
+- `ports.vac_u_lock` = oui (**À VALIDER**) — Exposer / ranger les accessoires Vac-U-Lock sur leur ergot.
+- `ports.npt` = oui (**À VALIDER**) — La douille NPT recoit l'ergot Vac-U-Lock (arriere NPT male) ou un accessoire filete.
+- `ports.montage_arriere` = npt_1_male (**À VALIDER**) — Sur un meuble, la douille femelle 1" NPT est dans le bois : l'ergot porte un arriere MALE et la douille reste utilisable par les accessoires NPT (Incognito / housses). Le defaut Aboutissants (ergot filete M8 cote machine) est disponible via le systeme port_vac_u_lock_m8. A TRANCHER.
+- `ports.verrouillage_actif` = non (**À VALIDER**) — Aboutissants : desactivable sur un port meuble peu charge (exposition).
+- `ports.fond_mini_douille` = 6 (**À VALIDER**) — Proposition : evite de deboucher au dos du plot.
+- `ports.paroi_bois_mini` = 12 (**À VALIDER**) — Proposition ; Aboutissants interdit de percer O33 dans une fibre tendue : plots rapportes.
+- `ports.degagement_accessoire` = 120 (**À VALIDER**) — Proposition : bases d'accessoires du marche non cotees (Aboutissants TODO).
+- `pose.capacite_support_mur` = — (**TODO**) — Support du batiment inconnu : releve sur place obligatoire.
+- `pose.anti_basculement` = oui (**À VALIDER**) — Obligatoire au-dela de ~1600 mm de haut (verifie par regles) ; ne reprend que de l'effort horizontal.
+- `jonctions.type_caisson` = tourillons (**À VALIDER**) — Invisible et economique ; queues d'aronde pour tiroirs et coffres.
+- `systemes.tiroir` = glissiere_invisible_amortie (**À VALIDER**) — Discretion (silencieux, invisible) ; cout a arbitrer.
+- `systemes.porte` = battante_charniere_soss (**À VALIDER**) — Invisible ferme, coherent Incognito.
+- `systemes.etagere` = taquets_systeme_32 (**À VALIDER**) — Reglage au pas de 32.
+- `systemes.crochet` = crochet_inox_double (**À VALIDER**) — Inox 316 O8 (cotes Equinox).
+- `systemes.barre` = tube_inox_20 (**À VALIDER**) — Leger et hygienique ; dimension de tube À VALIDER.
+- `systemes.serrure` = serrure_came (**À VALIDER**) — Decision prioritaire de Fabien (cle / code / RFID).
+- `systemes.port` = port_vac_u_lock_npt (**À VALIDER**) — Ergot + douille NPT interchangeables.
+- `ratelier.nombre_modules` = 2 (**À VALIDER**) — Demonstration : 2 x 600 mm = 1,2 m.
+- `ratelier.modules_hauteur` = 3 (**À VALIDER**) — 3 x 320 = 960 mm.
+- `ratelier.hauteur_pose` = 900 (**À VALIDER**) — Haut a 1860 mm : barres atteignables debout.
+- `ratelier.tasseau_hauteur` = 90 (**À VALIDER**) — Proposition.
+- `ratelier.tasseau_epaisseur` = 22 (**À VALIDER**) — Proposition.
+- `ratelier.recul_tasseau` = 40 (**À VALIDER**) — Proposition.
+- `ratelier.nombre_barres` = 2 (**À VALIDER**) — Proposition.
+- `ratelier.hauteur_premiere_barre` = 680 (**À VALIDER**) — Proposition.
+- `ratelier.entraxe_barres` = 180 (**À VALIDER**) — Proposition.
+- `ratelier.saillie_barre` = 110 (**À VALIDER**) — Les instruments suspendus passent devant les crochets (saillie crochet + 40 mm).
+- `ratelier.console_hauteur` = 80 (**À VALIDER**) — Proposition.
+- `ratelier.marge_console` = 20 (**À VALIDER**) — Proposition.
+- `ratelier.crochets_par_module` = 4 (**À VALIDER**) — Proposition.
+- `ratelier.hauteur_crochets` = 400 (**À VALIDER**) — Proposition.
+- `ratelier.ports_par_module` = 2 (**À VALIDER**) — Proposition.
+- `ratelier.hauteur_ports` = 130 (**À VALIDER**) — Proposition.
+- `ratelier.plot_largeur` = 70 (**À VALIDER**) — >= douille O41,4 + 2 x 12 mm (regles).
+- `ratelier.plot_profondeur` = 40 (**À VALIDER**) — >= L4 25 + fond 6 mm (regles).
+
+## Catalogues
+
+- bois `frene_blanc` : champs sans source sigma_adm_flexion
+- bois `noyer_noir` : champs sans source sigma_adm_flexion
+- bois `erable_sycomore` : champs sans source sigma_adm_flexion
+- bois `erable_dur` : champs sans source sigma_adm_flexion
+- bois `merisier` : champs sans source resistance_flexion, teinte, tenue_vis
+- bois `lamelle_hetre` : champs sans source resistance_flexion, sigma_adm_flexion, teinte, tenue_vis
+- bois `contreplaque_bouleau` : champs sans source resistance_flexion, sigma_adm_flexion, teinte, tenue_vis
+- finition métal `inox_brosse`
+- visserie `taquet_5` : À VALIDER (absent des autres gammes ; capacite = fiche fabricant)
+- charnière `charniere_cuvette_35` : À VALIDER (standard commercial, absent des autres gammes)
+- charnière `penture_angle` : neogothique/neogothique/catalogues/ferrures.py (penture_angle, sans cotes)
+- charnière `charniere_piano` : À VALIDER
+- système `glissiere_billes_sortie_totale` : À VALIDER (standard commercial ; jeu 12,7 mm et charge = fiche fabricant)
+- système `glissiere_invisible_amortie` : À VALIDER (standard commercial)
+- système `coulisse_bois` : À VALIDER (pratique d'ebenisterie, pas de cote dans les autres gammes)
+- système `battante_charniere_cuvette` : À VALIDER (standard commercial)
+- système `battante_pentures_forgees` : neogothique/neogothique/catalogues/ferrures.py (penture_angle)
+- système `coulissante_rainure` : À VALIDER
+- système `taquets_systeme_32` : À VALIDER (systeme 32 : standard industriel, absent des autres gammes)
+- système `cremaillere_encastree` : À VALIDER
+- système `tasseaux_rainures` : À VALIDER
+- système `etagere_invisible_tiges` : À VALIDER
+- système `patere_laiton` : equinox/equinox/parametres.py (laiton.diametre_capuchon 40, epaisseur_capuchon 3) ; O12 : À VALIDER
+- système `cheville_bois` : À VALIDER
+- système `crochet_forge` : neogothique/neogothique/catalogues/ferrures.py (fer_forge_mat : rond 12 dans sections_commerciales ; fer plat 5)
+- système `tube_inox_20` : À VALIDER (dimension commerciale de tube, absente des autres gammes ; inox_316 : equinox/equinox/catalogues/metaux.py)
+- système `rond_bois_30` : À VALIDER (O30 propose ; sigma_adm de l'essence : incognito/incognito/parametres.py)
+- système `serrure_came` : À VALIDER
+- système `serrure_code_mecanique` : À VALIDER
+- système `serrure_electronique_rfid` : À VALIDER (portee de lecture a travers le bois = fiche fabricant)
+- système `verrou_magnetique_cache` : À VALIDER
+- système `moraillon_cadenas` : À VALIDER (style neogothique/neogothique/catalogues/ferrures.py, piece absente du catalogue)
+- jonction `tenon_clavete` : neogothique/neogothique/catalogues/attaches.py (tenon_traversant_clavete) ; aboutissants/catalogues/jonctions_cadre.py
+- jonction `queue_d_aronde` : aboutissants/catalogues/jonctions_cadre.py (queue_d_aronde)
+- jonction `tasseau_biseaute` : À VALIDER (absent des autres gammes) ; support mural : aboutissants/common/params_globaux.py (cadre_modulaire.capacite_support_mur = TODO)
+- capacité de service de `glissiere_billes_sortie_totale` : fiche fabricant à obtenir
+- capacité de service de `glissiere_invisible_amortie` : fiche fabricant à obtenir
+- capacité de service de `coulisse_bois` : fiche fabricant à obtenir
+- capacité de service de `battante_charniere_soss` : fiche fabricant à obtenir
+- capacité de service de `battante_charniere_cuvette` : fiche fabricant à obtenir
+- capacité de service de `battante_pentures_forgees` : fiche fabricant à obtenir
+- capacité de service de `coulissante_rainure` : fiche fabricant à obtenir
+- capacité de service de `abattant_compas` : fiche fabricant à obtenir
+- capacité de service de `taquets_systeme_32` : fiche fabricant à obtenir
+- capacité de service de `cremaillere_encastree` : fiche fabricant à obtenir
+- capacité de service de `tasseaux_rainures` : fiche fabricant à obtenir
+- capacité de service de `etagere_invisible_tiges` : fiche fabricant à obtenir
+- capacité de service de `serrure_came` : fiche fabricant à obtenir
+- capacité de service de `serrure_code_mecanique` : fiche fabricant à obtenir
+- capacité de service de `serrure_electronique_rfid` : fiche fabricant à obtenir
+- capacité de service de `verrou_magnetique_cache` : fiche fabricant à obtenir
+- capacité de service de `loquet_pene_forge` : fiche fabricant à obtenir
+- capacité de service de `moraillon_cadenas` : fiche fabricant à obtenir
+- capacité de service de `port_vac_u_lock_npt` : fiche fabricant à obtenir
+- capacité de service de `port_npt_1_femelle` : fiche fabricant à obtenir
+- capacité de service de `port_cache_affleurant` : fiche fabricant à obtenir
+- notes de compromis (1–5) de tous les systèmes : appréciations de conception à valider

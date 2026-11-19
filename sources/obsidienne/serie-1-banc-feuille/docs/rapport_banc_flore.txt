@@ -1,0 +1,60 @@
+Equinox - banc_flore
+========================================
+Masse structure : 25.5 kg ; CG (318, -0, 389) mm
+
+Verifications :
+  [ECHEC] lest_integrable : tube 40x40 utile 298 mm : 14.70 kg/m de plomb -> 4.4 kg logeables (lest vise 18 kg, mini 15 kg). LEST INSUFFISANT : un tube 40x40 de 318 mm ne loge pas 15-20 kg ; il faut ~1021 mm de tube plein de plomb (options : lest reparti dans une 2e traverse basse avant ou des longerons bas, tube 60x60, ou lest additionnel amovible)
+  [OK] ancrage_oeillets_bas : oeillets_bas : effort 1177 N vs CMU catalogue 2000 N (Oeillet inox A4 fil 8 mm sur platine 2 mm (soude, teste)) - CMU fabricant a confirmer
+  [OK] ancrage_anneau_arriere : anneau_arriere : effort 1177 N vs CMU catalogue 2500 N (Anneau inox A4 fil 8 mm, di 40, sur pontet + tige filetee M8 traversante) - CMU fabricant a confirmer
+  [OK] interference_helice_G : jeu mini helice / pied hors collier : 17.9 mm
+  [OK] interference_helice_D : jeu mini helice / pied hors collier : 17.9 mm
+  [OK] courbure_branche_G : rayon mini branche 372 mm (mini 300)
+  [OK] courbure_branche_D : rayon mini branche 372 mm (mini 300)
+  [OK] courbure_pieds : rayon mini des pieds galbes 2488 mm (mini 300)
+  [OK] cg_dans_polygone : CG (485, -0, 617) a 199 mm du bord du polygone de sustentation
+  [OK] renversement_poussee_vers_avant : poussee_vers_avant : M stabilisant 881 N.m / M renversant 265 N.m = 3.32 (exige 1.50)
+  [OK] renversement_traction_vers_arriere : traction_vers_arriere : M stabilisant 642 N.m / M renversant 265 N.m = 2.42 (exige 1.50)
+  [OK] renversement_lateral_G : lateral_G : M stabilisant 284 N.m / M renversant 150 N.m = 1.89 (exige 1.50)
+  [OK] renversement_lateral_D : lateral_D : M stabilisant 284 N.m / M renversant 150 N.m = 1.89 (exige 1.50)
+  [OK] glissement : frottement 428 N vs effort horizontal 353 N (ratio 1.21) ; au-dessous de 1,2 : ancrer au sol via les oeillets bas
+  [OK] pied_flexion_noeud : sigma 4.2 MPa pour d 50 mm (M 51.1 N.m) ; admissible MOR/3.0 = 34.5 MPa
+  [OK] pied_flexion_entre_noeuds : sigma 4.9 MPa pour d 40 mm (M 30.6 N.m) ; admissible MOR/3.0 = 34.5 MPa
+  [OK] pied_flambement : Euler P_cr 11416 N (d mini 40, L 578, K 2.0) vs 846 N x 3.0
+  [OK] longerons : sigma 4.6 / 34.5 MPa ; fleche 0.77 / 3.10 mm (portee 930, 40x70)
+  [ECHEC] helice_torsion : tau 128 MPa vs 64 admissible (F 353 N, D moyen 230, d 12 plein, Wahl 1.07) ; d plein requis 15.1 mm
+  [ECHEC] helice_fleche : fleche sous genou 43.1 mm (confort : <= 5 mm, alerte <= 15 mm)
+  [OK] glissiere_genou : effort genou 353 N vs capacite glissiere 1200 N
+  [OK] branche_coude_racine : sigma 2.4 MPa pour d 50 mm (M 29.7 N.m) ; admissible MOR/3.0 = 34.5 MPa
+  [OK] branche_coude_mi_longueur : sigma 2.4 MPa pour d 40 mm (M 14.9 N.m) ; admissible MOR/3.0 = 34.5 MPa
+
+Ajustements materiaux -> geometrie :
+  - ALERTE [lest:plomb] lest plomb : 14.70 kg/m dans tube 40x40 ; 18 kg exigent 1225 mm de tube rempli
+
+Jonctions (24) :
+  - mortaise_AR_D [tenon_mortaise] {'tenon': '17 mm', 'profondeur': '40 mm', 'cheville': 'tourillon d10 x 50 tire-fort'}
+  - capuchon_AR_D_fixation [taraudage] {'insert': 'M8 x 20', 'colle': 'epoxy', 'jupe': '12 mm'}
+  - mortaise_AR_G [tenon_mortaise] {'tenon': '17 mm', 'profondeur': '40 mm', 'cheville': 'tourillon d10 x 50 tire-fort'}
+  - capuchon_AR_G_fixation [taraudage] {'insert': 'M8 x 20', 'colle': 'epoxy', 'jupe': '12 mm'}
+  - mortaise_AV_D [tenon_mortaise] {'tenon': '17 mm', 'profondeur': '40 mm', 'cheville': 'tourillon d10 x 50 tire-fort'}
+  - capuchon_AV_D_fixation [taraudage] {'insert': 'M8 x 20', 'colle': 'epoxy', 'jupe': '12 mm'}
+  - mortaise_AV_G [tenon_mortaise] {'tenon': '17 mm', 'profondeur': '40 mm', 'cheville': 'tourillon d10 x 50 tire-fort'}
+  - capuchon_AV_G_fixation [taraudage] {'insert': 'M8 x 20', 'colle': 'epoxy', 'jupe': '12 mm'}
+  - traverse_haute_AR_tourillons [tourillons] {'nombre': 2, 'diametre': 10.0, 'longueur': 50.0}
+  - traverse_haute_AV_tourillons [tourillons] {'nombre': 2, 'diametre': 10.0, 'longueur': 50.0}
+  - plateau_sur_ceinture [taraudage] {'inserts': '6 x M8 dans longerons', 'demontable': True}
+  - traverse_G [tenon_barillet] {'tenon': '17 mm', 'boulon': 'M8 traversant le noeud, visse dans bouchon taraude soude en bout de tube', 'barillet': 'Boulon + ecrou barillet M8 (cross-dowel)'}
+  - traverse_D [tenon_barillet] {'tenon': '17 mm', 'boulon': 'M8 traversant le noeud, visse dans bouchon taraude soude en bout de tube', 'barillet': 'Boulon + ecrou barillet M8 (cross-dowel)'}
+  - oeillet_bas_AR_G_fixation [taraudage] {'insert': 'M8', 'longueur_insert': 20.0, 'feuillure_profondeur': 10.0, 'vis_platine': '4 x vis inox A4 d4', 'note': 'vis axiale traverse capuchon+platine'}
+  - oeillet_bas_AR_D_fixation [taraudage] {'insert': 'M8', 'longueur_insert': 20.0, 'feuillure_profondeur': 10.0, 'vis_platine': '4 x vis inox A4 d4', 'note': 'vis axiale traverse capuchon+platine'}
+  - anneau_arriere_tige [taraudage] {'tige': 'M8 inox A4 traversante', 'ecrou': 'borgne + rondelle d24 cote oppose', 'percage_tube': 'd 9 a travers les 2 parois du tube 40x40 (manchon entretoise d 12 soude)'}
+  - pivot_helice_G [pivot_crans] {'axe': 'd16 inox + bague bronze', 'crans': 2, 'angles': [0.0, 35.0], 'indexage': 'doigt a ressort M10, trous dans le collier'}
+  - glissiere_G_fixation [taraudage] {'brides': "2 brides inox soudees sur l'ellipse, vis M6", 'indexage': 'doigt pas 25 mm'}
+  - pivot_helice_D [pivot_crans] {'axe': 'd16 inox + bague bronze', 'crans': 2, 'angles': [0.0, 35.0], 'indexage': 'doigt a ressort M10, trous dans le collier'}
+  - glissiere_D_fixation [taraudage] {'brides': "2 brides inox soudees sur l'ellipse, vis M6", 'indexage': 'doigt pas 25 mm'}
+  - branche_G_noeud [tenon_mortaise] {'type': 'enfourchement colle', 'tourillon': 'd10'}
+  - coude_G_platine [taraudage] {'insert': 'M8', 'platine': '2 mm'}
+  - branche_D_noeud [tenon_mortaise] {'type': 'enfourchement colle', 'tourillon': 'd10'}
+  - coude_D_platine [taraudage] {'insert': 'M8', 'platine': '2 mm'}
+
+Notes :
+  - Helice d12 : insuffisante comme seul support du genou (d plein requis ~15 mm). Options : (a) passer a d16-18 plein ; (b) garder d12 et reprendre la charge par une bequille frene sous la glissiere (l'helice devient guide + pivot) ; (c) reduire l'ellipse.

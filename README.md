@@ -35,3 +35,10 @@ Les séries sont ajoutées au fur et à mesure des itérations de design.
 - Jamais de valeur en dur dans un script : tout passe par `parametres/` ou `catalogues/`
 - Un changement de teinte ou d'essence se fait à un seul endroit
 - Les jonctions : tourillons par défaut, mortaise-tenon pour les angles droits critiques
+
+## Sources récupérées et briefs
+
+Les copies de travail locales (paramètres, catalogues de gamme, grammaires, scripts Fusion, tests, documentation et aperçus) sont sous [`sources/`](sources/README.md), rangées selon la nouvelle nomenclature. Voir ce README pour la correspondance des anciens noms (Equinox, Néogothique, Incognito, Tantra, Rangement, Gamme cuir, Aboutissants).
+
+Les briefs Design, y compris le brief Émeraude et la récupération des propositions des anciens agents Design (propositions non validées), sont sous [`briefs/`](briefs/).
+

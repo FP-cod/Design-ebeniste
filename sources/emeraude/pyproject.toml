@@ -1,0 +1,10 @@
+[project]
+name = "tantra"
+version = "0.1.0"
+description = "Gamme Tantra & Bien-être : fauteuils tantriques fixes, meubles camouflables, cadres de contention transformables."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

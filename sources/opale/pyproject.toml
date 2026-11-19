@@ -1,0 +1,10 @@
+[project]
+name = "incognito"
+version = "0.1.0"
+description = "Gamme de mobilier Incognito : apparence salon classique, fonction cachée."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

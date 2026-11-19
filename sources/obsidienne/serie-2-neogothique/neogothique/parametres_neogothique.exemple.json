@@ -1,0 +1,13 @@
+{
+  "_commentaire": "Copier en parametres_neogothique.json pour activer. Cles pointees ou dicts imbriques.",
+  "commun": {
+    "ferrures.finition": "huile_brunie"
+  },
+  "typologies": {
+    "entrave": {
+      "entrave.pied.section": "octogonal",
+      "entrave.pied.cote": 120.0,
+      "cremaillere.cran_courant": 2
+    }
+  }
+}

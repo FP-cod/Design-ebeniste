@@ -1,0 +1,148 @@
+{
+  "ancrage": {
+    "anneaux_sol": true,
+    "capacite_point": 2000.0,
+    "lest": 0.0
+  },
+  "bois": {
+    "chanfrein_aretes": 2.0,
+    "essence": "noyer",
+    "finition": "huile_cire_noire",
+    "humidite_cible": 10.0,
+    "section_mini": 40.0,
+    "variation_humidite": 3.0
+  },
+  "charges": {
+    "coef_dynamique": 1.5,
+    "coef_frottement_sol": 0.3,
+    "fleche_limite_ratio": 300.0,
+    "g": 9.81,
+    "gamma_cuir": 4.0,
+    "gamma_m_bois": 1.3,
+    "gamma_m_metal": 1.1,
+    "kmod_bois": 0.8,
+    "recouvrement_ratio_mini": 1.5,
+    "traction_manille": 500.0,
+    "verticale_service": 1500.0
+  },
+  "cremaillere": {
+    "angle_pression": 20.0,
+    "barre_epaisseur": 10.0,
+    "barre_largeur": 30.0,
+    "convention": "positions",
+    "cran_courant": 0,
+    "dents_mini": 14,
+    "hauteur_maxi": 450.0,
+    "hauteur_mini": 300.0,
+    "largeur_denture": 20.0,
+    "marge_engrenement": 15.0,
+    "module": 3.0,
+    "nombre_crans": 7,
+    "pas": 25.0
+  },
+  "entrave": {
+    "coulisseau": {
+      "garde_bas": 5.0
+    },
+    "fourreau": {
+      "frette_hauteur": 30.0,
+      "jeu_haut": 10.0,
+      "paroi": 22.0,
+      "paroi_diagonale_min": 12.0
+    },
+    "manilles": {
+      "ecartement_poignets": 600.0,
+      "hauteur_pivot": 30.0,
+      "pivot_cou": "axe_vertical_chape",
+      "pivot_poignets": "axe_vertical_chape",
+      "position_y": 0.0
+    },
+    "pentures": {
+      "longueur": 140.0,
+      "rivets_par_branche": 3
+    },
+    "pied": {
+      "cote": 110.0,
+      "retrait_bord": 30.0,
+      "section": "carre"
+    },
+    "platine": {
+      "epaisseur": 50.0,
+      "largeur": 400.0,
+      "longueur": 800.0
+    },
+    "semelle": {
+      "hauteur": 60.0,
+      "largeur": 90.0,
+      "longueur": 560.0,
+      "profondeur_logement": 40.0
+    },
+    "traverse": {
+      "garde_sol": 10.0,
+      "hauteur": 70.0,
+      "largeur": 60.0
+    }
+  },
+  "ferrures": {
+    "axe_pivot_diametre": 16.0,
+    "fer_plat_epaisseur": 5.0,
+    "fer_plat_largeur": 40.0,
+    "finition": "cire_noire",
+    "gond_diametre": 10.0,
+    "metal": "fer_forge_mat",
+    "platine_pivot_cote": 80.0,
+    "platine_pivot_epaisseur": 6.0,
+    "rivet_diametre": 6.0,
+    "tete_rivet_cote": 10.0
+  },
+  "gamme": {
+    "nom": "Neogothique",
+    "prefixe_fusion": "neo_",
+    "version": "0.1.0"
+  },
+  "garnissage": {
+    "coloris": "noir",
+    "cuir_manilles": "cuir_renforce_double_noir",
+    "diametre_int_cou": 130.0,
+    "diametre_int_poignet": 75.0,
+    "epaisseur_manille": 6.5,
+    "epaisseur_rembourrage": 30.0,
+    "largeur_manille_cou": 60.0,
+    "largeur_manille_poignet": 50.0
+  },
+  "jonctions": {
+    "cheville_diametre": 10.0,
+    "decalage_drawbore": 1.5,
+    "ratio_tenon": 0.3333333333333333,
+    "saillie_tenon_clavete": 45.0,
+    "tolerance_ratio_tenon": 0.05,
+    "tourillon_diametre": 10.0,
+    "type_coulisseau_platine": "tenon_traversant_cale",
+    "type_fourreau_semelle": "tenon_traversant_cheville",
+    "type_joues_fourreau": "tourillons",
+    "type_traverse_semelle": "tenon_traversant_clavete"
+  },
+  "loquet": {
+    "boitier_hauteur": 50.0,
+    "course": 25.0,
+    "engagement": 12.0,
+    "loquets_porteurs_min": 2,
+    "pene_diametre": 16.0
+  },
+  "securite": {
+    "arrondi_contact_peau": 3.0,
+    "ouverture_rapide_cou": true
+  },
+  "synchro": {
+    "arbre_diametre": 20.0,
+    "carter_cote": 60.0,
+    "mode": "quatre_points"
+  },
+  "tolerances": {
+    "ecart_debattement": 0.5,
+    "jeu_axes": 0.3,
+    "jeu_coulisseau": 1.5,
+    "jeu_mortaise": 0.2,
+    "jeu_mortaise_oblongue": 2.0
+  }
+}

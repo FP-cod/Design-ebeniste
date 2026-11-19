@@ -5,3 +5,5 @@ Série fondatrice d'Obsidienne. Banc à fessée organique, frêne clair, cuir co
 - Design : [Ébénisterie] Design Obsidienne
 - Script : [Ébénisterie] Script Obsidienne
 - Fichiers : `banc_feuille.py` (à venir)
+
+Code récupéré : `sources/obsidienne/serie-1-banc-feuille/` (ex-Equinox).

@@ -1,0 +1,8 @@
+{
+  "autodeskProduct": "Fusion360",
+  "type": "script",
+  "author": "Equinox",
+  "description": {"": "Equinox - grammaire chaise_trone (genere les composants parametres)"},
+  "supportedOS": "windows|mac",
+  "editEnabled": true
+}

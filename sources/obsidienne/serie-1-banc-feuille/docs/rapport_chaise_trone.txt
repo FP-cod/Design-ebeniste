@@ -1,0 +1,41 @@
+Equinox - chaise_trone
+========================================
+Masse structure : 8.7 kg ; CG (-104, -0, 526) mm
+
+Verifications :
+  [OK] ancrage_anneau_poignet_G : anneau_poignet_G : effort 1177 N vs CMU catalogue 2500 N (Anneau inox A4 fil 8 mm, di 40, sur pontet + tige filetee M8 traversante) - CMU fabricant a confirmer
+  [ALERTE] accoudoir_G_flexion : sigma 66.6 MPa pour d 30 mm (M 176.6 N.m) ; admissible MOR/3.0 = 34.5 MPa
+  [OK] ancrage_anneau_poignet_D : anneau_poignet_D : effort 1177 N vs CMU catalogue 2500 N (Anneau inox A4 fil 8 mm, di 40, sur pontet + tige filetee M8 traversante) - CMU fabricant a confirmer
+  [ALERTE] accoudoir_D_flexion : sigma 66.6 MPa pour d 30 mm (M 176.6 N.m) ; admissible MOR/3.0 = 34.5 MPa
+  [OK] ancrage_oeillets_bas : oeillets_bas : effort 1177 N vs CMU catalogue 2000 N (Oeillet inox A4 fil 8 mm sur platine 2 mm (soude, teste)) - CMU fabricant a confirmer
+  [OK] cg_dans_polygone : CG (-50, -0, 651) a 233 mm du bord du polygone de sustentation
+  [ALERTE] renversement_appui_dossier : appui_dossier : M stabilisant 484 N.m / M renversant 353 N.m = 1.37 (exige 1.50) -> lest additionnel requis 32.9 kg
+  [OK] renversement_lateral : lateral : M stabilisant 294 N.m / M renversant 134 N.m = 2.19 (exige 1.50)
+  [OK] renversement_vers_avant : vers_avant : M stabilisant 332 N.m / M renversant 117 N.m = 2.85 (exige 1.50)
+  [ALERTE] glissement : frottement 379 N vs effort horizontal 353 N (ratio 1.07) ; au-dessous de 1,2 : ancrer au sol via les oeillets bas
+  [OK] pied_flambement : Euler P_cr 8276 N (d mini 30, L 382, K 2.0) vs 793 N x 3.0
+
+Ajustements materiaux -> geometrie :
+  - ALERTE [lest:plomb] lest plomb : 14.70 kg/m dans tube 40x40 ; 18 kg exigent 1225 mm de tube rempli
+  - AJUSTE dimensions.hauteur_structure : 652 mm -> 412 mm  [geometrie] hauteur de structure recalculee pour garder la hauteur d'assise (assise maintenue a 460 mm : 460 - 30 (rembourrage) - 18 (support))
+
+Jonctions (15) :
+  - mortaise_pied_AR_G [tenon_mortaise] {'tenon': 17.0, 'profondeur': 40.0, 'tourillon': 10.0}
+  - mortaise_pied_AR_D [tenon_mortaise] {'tenon': 17.0, 'profondeur': 40.0, 'tourillon': 10.0}
+  - mortaise_pied_AV_G [tenon_mortaise] {'tenon': 17.0, 'profondeur': 40.0, 'tourillon': 10.0}
+  - mortaise_pied_AV_D [tenon_mortaise] {'tenon': 17.0, 'profondeur': 40.0, 'tourillon': 10.0}
+  - nervure_0_pied [tenon_mortaise] {'tenon': 17.0}
+  - nervure_1_pied [tenon_mortaise] {'tenon': 17.0}
+  - nervure_2_pied [tenon_mortaise] {'tenon': 17.0}
+  - nervure_3_pied [tenon_mortaise] {'tenon': 17.0}
+  - nervure_4_pied [tenon_mortaise] {'tenon': 17.0}
+  - anneau_poignet_G_tige [taraudage] {'tige': 'M8 inox A4 traversante', 'ecrou': 'borgne + rondelle d24 cote oppose', 'percage_tube': 'd 9 a travers les 2 parois du tube 40x40 (manchon entretoise d 12 soude)'}
+  - anneau_poignet_D_tige [taraudage] {'tige': 'M8 inox A4 traversante', 'ecrou': 'borgne + rondelle d24 cote oppose', 'percage_tube': 'd 9 a travers les 2 parois du tube 40x40 (manchon entretoise d 12 soude)'}
+  - anneau_cheville_G_tige [taraudage] {'tige': 'M8 inox A4 traversante', 'ecrou': 'borgne + rondelle d24 cote oppose', 'percage_tube': 'd 9 a travers les 2 parois du tube 40x40 (manchon entretoise d 12 soude)'}
+  - anneau_cheville_D_tige [taraudage] {'tige': 'M8 inox A4 traversante', 'ecrou': 'borgne + rondelle d24 cote oppose', 'percage_tube': 'd 9 a travers les 2 parois du tube 40x40 (manchon entretoise d 12 soude)'}
+  - oeillet_bas_AR_G_fixation [taraudage] {'insert': 'M8', 'longueur_insert': 20.0, 'feuillure_profondeur': 10.0, 'vis_platine': '4 x vis inox A4 d4', 'note': 'vis axiale traverse capuchon+platine'}
+  - oeillet_bas_AR_D_fixation [taraudage] {'insert': 'M8', 'longueur_insert': 20.0, 'feuillure_profondeur': 10.0, 'vis_platine': '4 x vis inox A4 d4', 'note': 'vis axiale traverse capuchon+platine'}
+
+Notes :
+  - Trone : +32.9 kg de lest bas a l'arriere requis ; alternatives : augmenter chaise.recul_pieds_arriere, reduire l'inclinaison du dossier, ou ancrer au sol (oeillets bas).
+  - Squelette : eventail de nervures a affiner en dessin ; assise inclinee de 4 deg vers l'arriere.

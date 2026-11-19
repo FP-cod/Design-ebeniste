@@ -1,0 +1,104 @@
+{
+  "ancrage": {
+    "anneau_arriere": true,
+    "attache_anneau": "anneau_inox_8",
+    "attache_oeillet": "oeillet_inox_8",
+    "diametre_interieur_anneau": 40.0,
+    "oeillets_bas": true,
+    "position_anneau": "mi_hauteur_traverse",
+    "profondeur_encastrement": 10.0,
+    "saillie_oeillet": 18.0
+  },
+  "bois": {
+    "angle_splay": 7.0,
+    "epaisseur_lamelle": 3.0,
+    "essence": "frene",
+    "humidite_cible": 10.0,
+    "longeron_hauteur": 70.0,
+    "longeron_largeur": 40.0,
+    "methode_cintrage": "lamelle_colle",
+    "rayon_courbure_min": 300.0,
+    "section_entre_noeuds": 40.0,
+    "section_extremite": 30.0,
+    "section_noeud": 50.0,
+    "section_traverse": 60.0
+  },
+  "dimensions": {
+    "avance_coudes": 60.0,
+    "entraxe_coudes": 480.0,
+    "entraxe_genoux": 480.0,
+    "hauteur_appui_coudes": 570.0,
+    "hauteur_appui_genoux": 430.0,
+    "hauteur_assise": 700.0,
+    "largeur_plateau": 340.0,
+    "longueur_bassin_epaules": 540.0,
+    "longueur_plateau": 1150.0,
+    "marge_bassin": 80.0,
+    "marge_epaules": 60.0,
+    "mode_longueur": "complet",
+    "porte_a_faux": 110.0,
+    "recul_genoux": 100.0,
+    "retrait_lateral_pieds": 40.0
+  },
+  "gamme": {
+    "nom": "Equinox",
+    "prefixe_fusion": "eq_"
+  },
+  "garnissage": {
+    "couleur": "cognac",
+    "densite_mousse": 50.0,
+    "epaisseur_rembourrage": 30.0,
+    "epaisseur_support": 18.0,
+    "inclinaison_plateau": 2.0,
+    "materiau": "cuir_pleine_fleur",
+    "methode_fixation": "agrafage_sous_support",
+    "rayon_bord": 12.0
+  },
+  "inox": {
+    "angle_entre_crans": 35.0,
+    "crans_verrouillage": 2,
+    "diametre_axe_pivot": 16.0,
+    "diametre_oeillet": 8.0,
+    "diametre_tube_helice": 12.0,
+    "epaisseur_paroi_helice": 2.0,
+    "epaisseur_plaque": 2.0,
+    "hauteur_pivot": 300.0,
+    "nombre_tours_helice": 2.0,
+    "nuance": "inox_316",
+    "section_helice": "plein"
+  },
+  "jonctions": {
+    "diametre_tourillon": 10.0,
+    "epaisseur_tenon": 17.0,
+    "filetage_insert": "M8",
+    "longueur_insert": 20.0,
+    "longueur_tourillon": 50.0,
+    "profondeur_mortaise": 40.0
+  },
+  "laiton": {
+    "diametre_capuchon": 40.0,
+    "epaisseur_capuchon": 3.0,
+    "hauteur_jupe": 12.0,
+    "nuance": "laiton_cw614n"
+  },
+  "securite": {
+    "charge_utilisateur": 120.0,
+    "coefficient_dynamique": 2.0,
+    "coefficient_horizontal_lat": 0.15,
+    "coefficient_horizontal_long": 0.3,
+    "fleche_admissible": 300.0,
+    "frottement_sol": 0.3,
+    "securite_bois": 3.0,
+    "securite_metal": 1.8,
+    "securite_renversement": 1.5
+  },
+  "traverse": {
+    "cote_tube": 40.0,
+    "epaisseur_paroi": 2.0,
+    "hauteur_axe": 130.0,
+    "lest_max": 20.0,
+    "lest_min": 15.0,
+    "lest_nominal": 18.0,
+    "materiau_lest": "plomb"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "_aide": "Overrides utilisateur Equinox (memes chemins que equinox/parametres.py). commun = toutes typologies ; typologies.<nom> = une typologie. Laisser vide = valeurs par defaut.",
+  "commun": {},
+  "typologies": {
+    "banc_flore": {},
+    "croix_saint_andre": {},
+    "tabouret": {},
+    "chaise_trone": {}
+  }
+}

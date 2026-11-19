@@ -1,0 +1,40 @@
+Equinox - croix_saint_andre
+========================================
+Masse structure : 29.2 kg ; CG (94, -0, 297) mm
+
+Verifications :
+  [OK] courbure_branche_1 : rayon mini 25107 mm
+  [OK] courbure_branche_2 : rayon mini 25107 mm
+  [ALERTE] lest_integrable : lest logeable dans la semelle arriere : 9.3 kg
+  [OK] ancrage_anneau_poignet_G : anneau_poignet_G : effort 1177 N vs CMU catalogue 2500 N (Anneau inox A4 fil 8 mm, di 40, sur pontet + tige filetee M8 traversante) - CMU fabricant a confirmer
+  [OK] ancrage_anneau_poignet_D : anneau_poignet_D : effort 1177 N vs CMU catalogue 2500 N (Anneau inox A4 fil 8 mm, di 40, sur pontet + tige filetee M8 traversante) - CMU fabricant a confirmer
+  [OK] ancrage_anneau_cheville_G : anneau_cheville_G : effort 1177 N vs CMU catalogue 2500 N (Anneau inox A4 fil 8 mm, di 40, sur pontet + tige filetee M8 traversante) - CMU fabricant a confirmer
+  [OK] ancrage_anneau_cheville_D : anneau_cheville_D : effort 1177 N vs CMU catalogue 2500 N (Anneau inox A4 fil 8 mm, di 40, sur pontet + tige filetee M8 traversante) - CMU fabricant a confirmer
+  [OK] ancrage_anneau_taille_G : anneau_taille_G : effort 1177 N vs CMU catalogue 2500 N (Anneau inox A4 fil 8 mm, di 40, sur pontet + tige filetee M8 traversante) - CMU fabricant a confirmer
+  [OK] ancrage_anneau_taille_D : anneau_taille_D : effort 1177 N vs CMU catalogue 2500 N (Anneau inox A4 fil 8 mm, di 40, sur pontet + tige filetee M8 traversante) - CMU fabricant a confirmer
+  [OK] cg_dans_polygone : CG (-181, -0, 862) a 369 mm du bord du polygone de sustentation
+  [OK] renversement_traction_vers_avant : traction_vers_avant : M stabilisant 541 N.m / M renversant 309 N.m = 1.75 (exige 1.50)
+  [OK] renversement_poussee_dos : poussee_dos : M stabilisant 1362 N.m / M renversant 222 N.m = 6.12 (exige 1.50)
+  [OK] renversement_lateral : lateral : M stabilisant 783 N.m / M renversant 278 N.m = 2.82 (exige 1.50)
+  [OK] glissement : frottement 439 N vs effort horizontal 294 N (ratio 1.49) ; au-dessous de 1,2 : ancrer au sol via les oeillets bas
+  [ALERTE] branche_flexion_noeud : sigma 58.4 MPa pour d 60 mm (M 1238.8 N.m) ; admissible MOR/3.0 = 34.5 MPa
+
+Ajustements materiaux -> geometrie :
+  - ALERTE [lest:plomb] lest plomb : 14.70 kg/m dans tube 40x40 ; 18 kg exigent 1225 mm de tube rempli
+
+Jonctions (10) :
+  - noeud_mi_bois [mi_bois] {'type': 'entaille a mi-bois collee', 'renfort': 'platines inox 2 mm x2 + 4 inserts M8'}
+  - jambe_attache [tenon_barillet] {'boulon': 'M10 traversant + barillet', 'demontable': True}
+  - anneau_poignet_G_tige [taraudage] {'tige': 'M8 inox A4 traversante', 'ecrou': 'borgne + rondelle d24 cote oppose', 'percage_tube': 'd 9 a travers les 2 parois du tube 40x40 (manchon entretoise d 12 soude)'}
+  - anneau_poignet_D_tige [taraudage] {'tige': 'M8 inox A4 traversante', 'ecrou': 'borgne + rondelle d24 cote oppose', 'percage_tube': 'd 9 a travers les 2 parois du tube 40x40 (manchon entretoise d 12 soude)'}
+  - anneau_cheville_G_tige [taraudage] {'tige': 'M8 inox A4 traversante', 'ecrou': 'borgne + rondelle d24 cote oppose', 'percage_tube': 'd 9 a travers les 2 parois du tube 40x40 (manchon entretoise d 12 soude)'}
+  - anneau_cheville_D_tige [taraudage] {'tige': 'M8 inox A4 traversante', 'ecrou': 'borgne + rondelle d24 cote oppose', 'percage_tube': 'd 9 a travers les 2 parois du tube 40x40 (manchon entretoise d 12 soude)'}
+  - anneau_taille_G_tige [taraudage] {'tige': 'M8 inox A4 traversante', 'ecrou': 'borgne + rondelle d24 cote oppose', 'percage_tube': 'd 9 a travers les 2 parois du tube 40x40 (manchon entretoise d 12 soude)'}
+  - anneau_taille_D_tige [taraudage] {'tige': 'M8 inox A4 traversante', 'ecrou': 'borgne + rondelle d24 cote oppose', 'percage_tube': 'd 9 a travers les 2 parois du tube 40x40 (manchon entretoise d 12 soude)'}
+  - oeillet_bas_AV_G_fixation [taraudage] {'insert': 'M8', 'longueur_insert': 20.0, 'feuillure_profondeur': 10.0, 'vis_platine': '4 x vis inox A4 d4', 'note': 'vis axiale traverse capuchon+platine'}
+  - oeillet_bas_AV_D_fixation [taraudage] {'insert': 'M8', 'longueur_insert': 20.0, 'feuillure_profondeur': 10.0, 'vis_platine': '4 x vis inox A4 d4', 'note': 'vis axiale traverse capuchon+platine'}
+
+Notes :
+  - Plateforme 550 mm : la personne s'y tient, ses tractions sur les anneaux sont internes ; seuls les efforts du partenaire sont externes.
+  - Branches : d 71 mm requis au noeud pour 1177 N au poignet (ou section ovale lamelle-colle 79 x 57, plus profonde que large)
+  - Squelette : branches cintrees a verifier en lamelle-colle (rayon), anneaux a positionner selon la morphologie (poignets a hauteur bras leves).

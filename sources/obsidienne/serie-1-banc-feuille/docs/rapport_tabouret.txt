@@ -1,0 +1,40 @@
+Equinox - tabouret
+========================================
+Masse structure : 5.5 kg ; CG (-3, -0, 287) mm
+
+Verifications :
+  [OK] ancrage_anneau_ceinture_0 : anneau_ceinture_0 : effort 1177 N vs CMU catalogue 2500 N (Anneau inox A4 fil 8 mm, di 40, sur pontet + tige filetee M8 traversante) - CMU fabricant a confirmer
+  [OK] ancrage_anneau_ceinture_1 : anneau_ceinture_1 : effort 1177 N vs CMU catalogue 2500 N (Anneau inox A4 fil 8 mm, di 40, sur pontet + tige filetee M8 traversante) - CMU fabricant a confirmer
+  [OK] ancrage_anneau_ceinture_2 : anneau_ceinture_2 : effort 1177 N vs CMU catalogue 2500 N (Anneau inox A4 fil 8 mm, di 40, sur pontet + tige filetee M8 traversante) - CMU fabricant a confirmer
+  [OK] ancrage_anneau_ceinture_3 : anneau_ceinture_3 : effort 1177 N vs CMU catalogue 2500 N (Anneau inox A4 fil 8 mm, di 40, sur pontet + tige filetee M8 traversante) - CMU fabricant a confirmer
+  [OK] ancrage_oeillets_bas : oeillets_bas : effort 1177 N vs CMU catalogue 2000 N (Oeillet inox A4 fil 8 mm sur platine 2 mm (soude, teste)) - CMU fabricant a confirmer
+  [OK] cg_dans_polygone : CG (-0, -0, 672) a 170 mm du bord du polygone de sustentation
+  [OK] renversement_lateral_Y : lateral_Y : M stabilisant 210 N.m / M renversant 122 N.m = 1.72 (exige 1.50)
+  [OK] renversement_bascule_X : bascule_X : M stabilisant 222 N.m / M renversant 122 N.m = 1.82 (exige 1.50)
+  [OK] renversement_bascule_-X : bascule_-X : M stabilisant 222 N.m / M renversant 122 N.m = 1.82 (exige 1.50)
+  [OK] glissement : frottement 369 N vs effort horizontal 177 N (ratio 2.09) ; au-dessous de 1,2 : ancrer au sol via les oeillets bas
+  [OK] pied_flambement : Euler P_cr 9747 N (d mini 30, L 352, K 2.0) vs 783 N x 3.0
+  [ALERTE] ceinture_basse_flexion : sigma 37.0 MPa pour d 30 mm (M 98.1 N.m) ; admissible MOR/3.0 = 34.5 MPa
+
+Ajustements materiaux -> geometrie :
+  - ALERTE [lest:plomb] lest plomb : 14.70 kg/m dans tube 40x40 ; 18 kg exigent 1225 mm de tube rempli
+  - AJUSTE dimensions.hauteur_structure : 652 mm -> 392 mm  [geometrie] hauteur de structure recalculee pour garder la hauteur d'assise (assise maintenue a 440 mm : 440 - 30 (rembourrage) - 18 (support))
+
+Jonctions (14) :
+  - mortaise_pied_AR_G [tenon_mortaise] {'tenon': 17.0, 'profondeur': 40.0, 'tourillon': 10.0}
+  - mortaise_pied_AR_D [tenon_mortaise] {'tenon': 17.0, 'profondeur': 40.0, 'tourillon': 10.0}
+  - mortaise_pied_AV_G [tenon_mortaise] {'tenon': 17.0, 'profondeur': 40.0, 'tourillon': 10.0}
+  - mortaise_pied_AV_D [tenon_mortaise] {'tenon': 17.0, 'profondeur': 40.0, 'tourillon': 10.0}
+  - anneau_ceinture_0_tige [taraudage] {'tige': 'M8 inox A4 traversante', 'ecrou': 'borgne + rondelle d24 cote oppose', 'percage_tube': 'd 9 a travers les 2 parois du tube 40x40 (manchon entretoise d 12 soude)'}
+  - anneau_ceinture_1_tige [taraudage] {'tige': 'M8 inox A4 traversante', 'ecrou': 'borgne + rondelle d24 cote oppose', 'percage_tube': 'd 9 a travers les 2 parois du tube 40x40 (manchon entretoise d 12 soude)'}
+  - anneau_ceinture_2_tige [taraudage] {'tige': 'M8 inox A4 traversante', 'ecrou': 'borgne + rondelle d24 cote oppose', 'percage_tube': 'd 9 a travers les 2 parois du tube 40x40 (manchon entretoise d 12 soude)'}
+  - anneau_ceinture_3_tige [taraudage] {'tige': 'M8 inox A4 traversante', 'ecrou': 'borgne + rondelle d24 cote oppose', 'percage_tube': 'd 9 a travers les 2 parois du tube 40x40 (manchon entretoise d 12 soude)'}
+  - noeud_ceinture_pied_AR_G [tourillons] {'nombre': 2, 'diametre': 10.0}
+  - noeud_ceinture_pied_AR_D [tourillons] {'nombre': 2, 'diametre': 10.0}
+  - noeud_ceinture_pied_AV_G [tourillons] {'nombre': 2, 'diametre': 10.0}
+  - noeud_ceinture_pied_AV_D [tourillons] {'nombre': 2, 'diametre': 10.0}
+  - oeillet_bas_AR_G_fixation [taraudage] {'insert': 'M8', 'longueur_insert': 20.0, 'feuillure_profondeur': 10.0, 'vis_platine': '4 x vis inox A4 d4', 'note': 'vis axiale traverse capuchon+platine'}
+  - oeillet_bas_AR_D_fixation [taraudage] {'insert': 'M8', 'longueur_insert': 20.0, 'feuillure_profondeur': 10.0, 'vis_platine': '4 x vis inox A4 d4', 'note': 'vis axiale traverse capuchon+platine'}
+
+Notes :
+  - Squelette : choisir tabouret plein ou de queening (echancrure), et la hauteur 440 a valider.

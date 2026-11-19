@@ -1,0 +1,35 @@
+GammeCuir - menottes_poignet_M_cognac
+
+Cotes principales (mm) :
+  - tour : 170.0
+  - jeu_doigt : 20.0
+  - epaisseur_totale : 8.7
+  - circonference_interieure : 190.0
+  - circonference_neutre : 217.3
+  - recouvrement : 90.0
+  - longueur_developpee : 307.3
+  - largeur : 50.0
+  - longueur_passant : 143.1
+  - longueur_couture : 740.5
+  - nb_points_couture : 231
+  - longueur_fil : 2961.8
+  - points_par_cm : 3.1
+  - tour_mini_reglable : 140.0
+  - tour_maxi_reglable : 200.0
+  - trous d'ardillon (x) : 217.3, 232.3, 247.3, 262.3, 277.3
+
+Constats des regles :
+  - INFO [allergene] rembourrage mousse_latex : allergene latex a signaler au client
+  - INFO [rivet_longueur] repli_boucle : empilement 9.4 mm -> tige 10 mm
+  - INFO [rivet_longueur] patte_anneau : empilement 11.7 mm -> tige 14 mm
+  - ALERTE [essai_patte] patte cousue + rivetee : capacite combinee non calculable, essai de traction >= 3000 N a faire sur prototype
+  - ALERTE [charge_estimee] boucle (Boucle a rouleau pour sangle 50 mm, laiton massif) : 3000 N estime (plausible) - exiger du fournisseur une rupture >= 3000 N
+  - ALERTE [charge_estimee] anneau (Anneau D laiton massif (moule) fil 6 mm, passage 30 mm) : 2500 N estime (probablement insuffisant) - exiger du fournisseur une rupture >= 3000 N
+  - ALERTE [charge_estimee] mousqueton (Mousqueton panique (ouverture sous charge) inox) : 3500 N estime (plausible) - exiger du fournisseur une rupture >= 3000 N
+  - INFO [usage] aucune suspension par les menottes ; surveiller la circulation (couleur, fourmillements, froid) ; ciseaux de securite a portee
+
+Notes :
+  - Patron a plat : la bande est modelisee developpee ; la mise en forme (cintrage) est faite a l'atelier.
+  - Empilement nominal des couches (le cuir exterieur est represente plan au-dessus du rembourrage).
+  - Quincaillerie simplifiee (sections carrees) posee a son emplacement de montage ; rivets du rabat cote bande seulement.
+  - Charges de quincaillerie : estimations a verifier fournisseur (voir catalogues/quincaillerie.py).

@@ -1,0 +1,92 @@
+{
+  "masse_totale_kg": 47.39,
+  "masse_mobile_kg": 24.63,
+  "masse_fixe_kg": 22.76,
+  "nombre_corps": 113,
+  "coulisseau_mm": 63,
+  "recouvrement_haut_mm": 65.0,
+  "z_loquet_mm": 194,
+  "barre_calage_longueur_mm": 235.0,
+  "verifications": {
+    "renversement_y": {
+      "valeur": 0.3113,
+      "limite": 1.0,
+      "niveau": "alerte"
+    },
+    "renversement_x": {
+      "valeur": 0.4001,
+      "limite": 1.0,
+      "niveau": "alerte"
+    },
+    "glissement": {
+      "valeur": 750.0,
+      "limite": 139.4582,
+      "niveau": "alerte"
+    },
+    "flexion_platine": {
+      "valeur": 2.1263,
+      "limite": 16.6154,
+      "niveau": "ok"
+    },
+    "fleche_platine": {
+      "valeur": 0.2605,
+      "limite": 2.1,
+      "niveau": "ok"
+    },
+    "cisaillement_pene": {
+      "valeur": 3.0981,
+      "limite": 123.343,
+      "niveau": "ok"
+    },
+    "matage_cran": {
+      "valeur": 7.7863,
+      "limite": 427.2727,
+      "niveau": "ok"
+    },
+    "ligament_crans": {
+      "valeur": 6.9211,
+      "limite": 123.343,
+      "niveau": "ok"
+    },
+    "dent_lewis": {
+      "valeur": 10.203,
+      "limite": 142.4242,
+      "niveau": "ok"
+    },
+    "torsion_arbre": {
+      "valeur": 2.7686,
+      "limite": 123.343,
+      "niveau": "ok"
+    },
+    "recouvrement": {
+      "valeur": 1.0317,
+      "limite": 1.5,
+      "niveau": "alerte"
+    },
+    "manille_cou": {
+      "valeur": 750.0,
+      "limite": 1500.0,
+      "niveau": "ok"
+    },
+    "manille_poignet": {
+      "valeur": 750.0,
+      "limite": 1500.0,
+      "niveau": "ok"
+    },
+    "axe_pivot": {
+      "valeur": 189.3073,
+      "limite": 213.6364,
+      "niveau": "ok"
+    },
+    "rivets_pivot": {
+      "valeur": 24.039,
+      "limite": 213.6364,
+      "niveau": "ok"
+    },
+    "chevilles_pied": {
+      "valeur": 908.9674,
+      "limite": 1691.6268,
+      "niveau": "ok"
+    }
+  }
+}

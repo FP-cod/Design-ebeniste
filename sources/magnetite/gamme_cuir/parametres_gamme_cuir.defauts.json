@@ -1,0 +1,1144 @@
+{
+ "_aide": "Parametres globaux par defaut de la GammeCuir. Chaque feuille : valeur, unite, role, plage/choix, statut (impose / a_valider / derive / libre), justification, source (chemin si repris d'une autre gamme, vide = proposition GammeCuir a valider). Unites internes : mm, N. Ne pas editer pour un projet : surcharger dans parametres_gamme_cuir.json.",
+ "sections": {
+  "gamme": {
+   "nom": {
+    "valeur": "GammeCuir",
+    "unite": "texte",
+    "role": "Nom de la gamme (prefixe des composants Fusion).",
+    "statut": "impose",
+    "justification": "Convention Equinox (gamme.nom).",
+    "source": "",
+    "utilise_par": [
+     "tous"
+    ]
+   },
+   "prefixe_fusion": {
+    "valeur": "gc_",
+    "unite": "texte",
+    "role": "Prefixe des User Parameters Fusion.",
+    "statut": "impose",
+    "justification": "Convention eq_ / neo_ / inc_ / abo_ des autres gammes.",
+    "source": "",
+    "utilise_par": [
+     "tous"
+    ]
+   }
+  },
+  "tailles": {
+   "poignet_S": {
+    "valeur": 150.0,
+    "unite": "mm",
+    "role": "Tour de poignet taille S (mesure anatomique, sans jeu).",
+    "plage": [
+     130,
+     165
+    ],
+    "statut": "a_valider",
+    "justification": "Reference generique adulte reprise d'Aboutissants (a valider sur mensurations reelles).",
+    "source": "aboutissants/common/params_globaux.py (anthropometrie.poignet_tour_S)",
+    "utilise_par": [
+     "menottes",
+     "bracelets"
+    ]
+   },
+   "poignet_M": {
+    "valeur": 170.0,
+    "unite": "mm",
+    "role": "Tour de poignet taille M (mesure anatomique, sans jeu).",
+    "plage": [
+     155,
+     185
+    ],
+    "statut": "a_valider",
+    "justification": "Reference generique adulte reprise d'Aboutissants (a valider sur mensurations reelles).",
+    "source": "aboutissants/common/params_globaux.py (anthropometrie.poignet_tour_M)",
+    "utilise_par": [
+     "menottes",
+     "bracelets"
+    ]
+   },
+   "poignet_L": {
+    "valeur": 190.0,
+    "unite": "mm",
+    "role": "Tour de poignet taille L (mesure anatomique, sans jeu).",
+    "plage": [
+     175,
+     205
+    ],
+    "statut": "a_valider",
+    "justification": "Reference generique adulte reprise d'Aboutissants (a valider sur mensurations reelles).",
+    "source": "aboutissants/common/params_globaux.py (anthropometrie.poignet_tour_L)",
+    "utilise_par": [
+     "menottes",
+     "bracelets"
+    ]
+   },
+   "poignet_XL": {
+    "valeur": 210.0,
+    "unite": "mm",
+    "role": "Tour de poignet taille XL (mesure anatomique, sans jeu).",
+    "plage": [
+     195,
+     240
+    ],
+    "statut": "a_valider",
+    "justification": "Reference generique adulte reprise d'Aboutissants (a valider sur mensurations reelles).",
+    "source": "aboutissants/common/params_globaux.py (anthropometrie.poignet_tour_XL)",
+    "utilise_par": [
+     "menottes",
+     "bracelets"
+    ]
+   },
+   "cheville_S": {
+    "valeur": 200.0,
+    "unite": "mm",
+    "role": "Tour de cheville taille S (mesure anatomique, sans jeu).",
+    "plage": [
+     170,
+     215
+    ],
+    "statut": "a_valider",
+    "justification": "Reference generique adulte reprise d'Aboutissants (a valider sur mensurations reelles).",
+    "source": "aboutissants/common/params_globaux.py (anthropometrie.cheville_tour_S)",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "cheville_M": {
+    "valeur": 220.0,
+    "unite": "mm",
+    "role": "Tour de cheville taille M (mesure anatomique, sans jeu).",
+    "plage": [
+     205,
+     240
+    ],
+    "statut": "a_valider",
+    "justification": "Reference generique adulte reprise d'Aboutissants (a valider sur mensurations reelles).",
+    "source": "aboutissants/common/params_globaux.py (anthropometrie.cheville_tour_M)",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "cheville_L": {
+    "valeur": 245.0,
+    "unite": "mm",
+    "role": "Tour de cheville taille L (mesure anatomique, sans jeu).",
+    "plage": [
+     225,
+     265
+    ],
+    "statut": "a_valider",
+    "justification": "Reference generique adulte reprise d'Aboutissants (a valider sur mensurations reelles).",
+    "source": "aboutissants/common/params_globaux.py (anthropometrie.cheville_tour_L)",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "cheville_XL": {
+    "valeur": 270.0,
+    "unite": "mm",
+    "role": "Tour de cheville taille XL (mesure anatomique, sans jeu).",
+    "plage": [
+     250,
+     310
+    ],
+    "statut": "a_valider",
+    "justification": "Reference generique adulte reprise d'Aboutissants (a valider sur mensurations reelles).",
+    "source": "aboutissants/common/params_globaux.py (anthropometrie.cheville_tour_XL)",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "cou_S": {
+    "valeur": 330.0,
+    "unite": "mm",
+    "role": "Tour de cou taille S (mesure anatomique, sans jeu).",
+    "plage": [
+     300,
+     355
+    ],
+    "statut": "a_valider",
+    "justification": "Reference generique adulte reprise d'Aboutissants (a valider sur mensurations reelles).",
+    "source": "aboutissants/common/params_globaux.py (anthropometrie.cou_tour_S)",
+    "utilise_par": [
+     "colliers"
+    ]
+   },
+   "cou_M": {
+    "valeur": 370.0,
+    "unite": "mm",
+    "role": "Tour de cou taille M (mesure anatomique, sans jeu).",
+    "plage": [
+     345,
+     395
+    ],
+    "statut": "a_valider",
+    "justification": "Reference generique adulte reprise d'Aboutissants (a valider sur mensurations reelles).",
+    "source": "aboutissants/common/params_globaux.py (anthropometrie.cou_tour_M)",
+    "utilise_par": [
+     "colliers"
+    ]
+   },
+   "cou_L": {
+    "valeur": 410.0,
+    "unite": "mm",
+    "role": "Tour de cou taille L (mesure anatomique, sans jeu).",
+    "plage": [
+     385,
+     435
+    ],
+    "statut": "a_valider",
+    "justification": "Reference generique adulte reprise d'Aboutissants (a valider sur mensurations reelles).",
+    "source": "aboutissants/common/params_globaux.py (anthropometrie.cou_tour_L)",
+    "utilise_par": [
+     "colliers"
+    ]
+   },
+   "cou_XL": {
+    "valeur": 450.0,
+    "unite": "mm",
+    "role": "Tour de cou taille XL (mesure anatomique, sans jeu).",
+    "plage": [
+     425,
+     500
+    ],
+    "statut": "a_valider",
+    "justification": "Reference generique adulte reprise d'Aboutissants (a valider sur mensurations reelles).",
+    "source": "aboutissants/common/params_globaux.py (anthropometrie.cou_tour_XL)",
+    "utilise_par": [
+     "colliers"
+    ]
+   }
+  },
+  "produit": {
+   "membre": {
+    "valeur": "poignet",
+    "unite": "texte",
+    "role": "Membre vise par la grammaire menottes (selectionne les tours et la largeur).",
+    "choix": [
+     "poignet",
+     "cheville"
+    ],
+    "statut": "libre",
+    "justification": "Une seule grammaire pour poignet et cheville.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "taille": {
+    "valeur": "M",
+    "unite": "texte",
+    "role": "Taille S/M/L/XL : le trou central de la rangee d'ardillon tombe sur le tour de cette taille.",
+    "choix": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ],
+    "statut": "libre",
+    "justification": "Taille centrale par defaut.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "usage": {
+    "valeur": "jeu_leger",
+    "unite": "texte",
+    "role": "Usage annonce : 'jeu_leger' (decoratif / contrainte symbolique) ou 'contention' (retenue reelle attachee a un meuble). Durcit les regles de securite.",
+    "choix": [
+     "jeu_leger",
+     "contention"
+    ],
+    "statut": "a_valider",
+    "justification": "Le scratch et les fermetures faibles ne sont acceptables qu'en jeu leger.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   }
+  },
+  "sangles": {
+   "largeur_menotte_poignet": {
+    "valeur": 50.0,
+    "unite": "mm",
+    "role": "Largeur de bande des menottes de poignet.",
+    "plage": [
+     30.0,
+     80.0
+    ],
+    "statut": "a_valider",
+    "justification": "Meme largeur que les manilles de poignet de l'Entrave : assortiment visuel et repartition de pression.",
+    "source": "neogothique/neogothique/parametres.py (garnissage.largeur_manille_poignet = 50)",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "largeur_menotte_cheville": {
+    "valeur": 60.0,
+    "unite": "mm",
+    "role": "Largeur de bande des menottes de cheville.",
+    "plage": [
+     40.0,
+     90.0
+    ],
+    "statut": "a_valider",
+    "justification": "Cheville plus forte et plus osseuse (malleoles) : bande plus large. Proposition a valider.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "largeur_collier": {
+    "valeur": 40.0,
+    "unite": "mm",
+    "role": "Largeur de bande des colliers (grammaire future).",
+    "plage": [
+     20.0,
+     70.0
+    ],
+    "statut": "a_valider",
+    "justification": "Compromis confort de la nuque / maintien. Neogothique utilise 60 mm pour une manille de cou fixe.",
+    "source": "",
+    "utilise_par": [
+     "colliers"
+    ]
+   },
+   "largeur_sangle_contention": {
+    "valeur": 38.0,
+    "unite": "mm",
+    "role": "Largeur des sangles de contention (grammaire future).",
+    "plage": [
+     25.0,
+     60.0
+    ],
+    "statut": "a_valider",
+    "justification": "Largeur courante de boucle de harnachement ; a confirmer selon boucles retenues.",
+    "source": "",
+    "utilise_par": [
+     "sangles"
+    ]
+   },
+   "largeur_passant": {
+    "valeur": 12.0,
+    "unite": "mm",
+    "role": "Largeur du passant (bride qui maintient la pointe).",
+    "plage": [
+     8.0,
+     20.0
+    ],
+    "statut": "a_valider",
+    "justification": "Assez large pour ne pas couper le cuir, assez etroit pour rester discret.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "epaisseur_passant": {
+    "valeur": 2.0,
+    "unite": "mm",
+    "role": "Epaisseur du cuir du passant (refendu).",
+    "plage": [
+     1.5,
+     3.5
+    ],
+    "statut": "a_valider",
+    "justification": "Un passant a 3,5 mm fait une surepaisseur disgracieuse : refendre a ~2 mm.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "jeu_passant": {
+    "valeur": 2.0,
+    "unite": "mm",
+    "role": "Jeu ajoute a la largeur de bande pour le perimetre interieur du passant.",
+    "plage": [
+     0.5,
+     5.0
+    ],
+    "statut": "a_valider",
+    "justification": "Le passant doit glisser sur deux epaisseurs de bande sans forcer.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   }
+  },
+  "cuir": {
+   "epaisseur_exterieure": {
+    "valeur": 3.5,
+    "unite": "mm",
+    "role": "Epaisseur du cuir exterieur (fleur visible).",
+    "plage": [
+     2.0,
+     5.0
+    ],
+    "statut": "a_valider",
+    "justification": "Classe 'moyenne' 3-3,5 mm : tenue de bande et trous d'ardillon durables, se cintre encore sur un poignet S.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "classes_epaisseur": {
+    "valeur": {
+     "fine": [
+      2.0,
+      2.5
+     ],
+     "moyenne": [
+      3.0,
+      3.5
+     ],
+     "forte": [
+      4.0,
+      5.0
+     ]
+    },
+    "unite": "mm",
+    "role": "Classes d'epaisseur fournisseur (mini, maxi).",
+    "statut": "impose",
+    "justification": "Classes demandees par Fabien (2-2,5 / 3-3,5 / 4-5 mm).",
+    "source": "",
+    "utilise_par": [
+     "tous"
+    ]
+   },
+   "nb_couches": {
+    "valeur": 3,
+    "unite": "",
+    "role": "Nombre de couches : 1 = exterieur seul, 2 = exterieur + doublure, 3 = exterieur + rembourrage + doublure.",
+    "plage": [
+     1,
+     3
+    ],
+    "statut": "a_valider",
+    "justification": "3 couches = confort maximal pour la contention.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "epaisseur_doublure": {
+    "valeur": 1.2,
+    "unite": "mm",
+    "role": "Epaisseur de la doublure cote peau.",
+    "plage": [
+     0.8,
+     2.0
+    ],
+    "statut": "a_valider",
+    "justification": "Doublure agneau 1,2 mm comme Neogothique.",
+    "source": "neogothique/neogothique/catalogues/garnissage.py (doublure_agneau_noir.epaisseur_mm = 1.2)",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "rembourrage": {
+    "valeur": true,
+    "unite": "bool",
+    "role": "Rembourrage entre exterieur et doublure (zone de contact du membre uniquement).",
+    "statut": "a_valider",
+    "justification": "Confort et repartition de pression ; exige au moins 2 couches (doublure qui l'enferme).",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "rembourrage_materiau": {
+    "valeur": "mousse_latex",
+    "unite": "texte",
+    "role": "Cle du rembourrage dans catalogues.cuirs.REMBOURRAGES.",
+    "choix": [
+     "mousse_latex",
+     "feutre_laine",
+     "neoprene"
+    ],
+    "statut": "a_valider",
+    "justification": "Latex HD comme les manilles sellier fin Neogothique.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "epaisseur_rembourrage": {
+    "valeur": 4.0,
+    "unite": "mm",
+    "role": "Epaisseur du rembourrage avant compression.",
+    "plage": [
+     0.0,
+     12.0
+    ],
+    "statut": "a_valider",
+    "justification": "Neogothique : 3 mm (sellier fin). 4 mm propose pour une menotte de contention : confort accru.",
+    "source": "neogothique/neogothique/catalogues/garnissage.py (cuir_sellier_fin_noir : rembourrage 3 mm)",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "retrait_rembourrage": {
+    "valeur": 2.0,
+    "unite": "mm",
+    "role": "Retrait du rembourrage par rapport a la ligne de couture (de chaque cote).",
+    "plage": [
+     0.5,
+     6.0
+    ],
+    "statut": "a_valider",
+    "justification": "La couture doit passer dans le cuir seul, pas dans la mousse.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "marge_rembourrage": {
+    "valeur": 6.0,
+    "unite": "mm",
+    "role": "Marge longitudinale entre le rembourrage et les zones percees (rivets, trous).",
+    "plage": [
+     2.0,
+     20.0
+    ],
+    "statut": "a_valider",
+    "justification": "Evite que les rivets ecrasent la mousse et que la mousse bourre sous l'ardillon.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "matiere": {
+    "valeur": "vachette_vegetale_pleine_fleur",
+    "unite": "texte",
+    "role": "Cle du cuir exterieur dans catalogues.cuirs.CUIRS.",
+    "choix": [
+     "vachette_vegetale_pleine_fleur",
+     "cuir_harnais_vegetal",
+     "vachette_chrome_pleine_fleur"
+    ],
+    "statut": "a_valider",
+    "justification": "Tannage vegetal : tranches lissables, se teinte, se patine comme le cuir Equinox.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "doublure_matiere": {
+    "valeur": "agneau_pleine_fleur",
+    "unite": "texte",
+    "role": "Cle de la doublure dans catalogues.cuirs.DOUBLURES.",
+    "choix": [
+     "agneau_pleine_fleur",
+     "veau_velours"
+    ],
+    "statut": "a_valider",
+    "justification": "Agneau : doux et fin, comme Neogothique.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   }
+  },
+  "tolerances": {
+   "decoupe": {
+    "valeur": 0.3,
+    "unite": "mm",
+    "role": "Tolerance de decoupe (+/-) des pieces de cuir.",
+    "plage": [
+     0.05,
+     1.5
+    ],
+    "statut": "a_valider",
+    "justification": "Decoupe laser / emporte-piece ; a la main compter 0,5-1 mm. Estimation d'atelier.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "jeu_trou_ardillon": {
+    "valeur": 0.5,
+    "unite": "mm",
+    "role": "Jeu diametral mini entre ardillon et trou.",
+    "plage": [
+     0.2,
+     2.0
+    ],
+    "statut": "a_valider",
+    "justification": "Le cuir se referme apres poinconnage ; sans jeu l'ardillon force et deforme le trou.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "jeu_passage_boucle": {
+    "valeur": 1.0,
+    "unite": "mm",
+    "role": "Jeu mini entre largeur de bande et passage interieur de boucle / anneau.",
+    "plage": [
+     0.0,
+     4.0
+    ],
+    "statut": "a_valider",
+    "justification": "La tranche lissee ne doit pas frotter sur la quincaillerie.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   }
+  },
+  "couture": {
+   "pas_point": {
+    "valeur": 3.2,
+    "unite": "mm",
+    "role": "Pas du point sellier (distance entre deux trous de griffe).",
+    "plage": [
+     2.0,
+     6.0
+    ],
+    "statut": "a_valider",
+    "justification": "Pas sellerie fine de l'Entrave (8 points/pouce, ~3,1 points/cm). 4 mm pour du cuir de harnais.",
+    "source": "neogothique/neogothique/catalogues/garnissage.py (_SELLERIE_FINE : sellier_pas = 3.2)",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "retrait_bord": {
+    "valeur": 3.0,
+    "unite": "mm",
+    "role": "Retrait de la ligne de couture par rapport a la tranche (filet d'abattage).",
+    "plage": [
+     2.0,
+     8.0
+    ],
+    "statut": "a_valider",
+    "justification": "Filet d'abattage a 3 mm comme Neogothique.",
+    "source": "neogothique/neogothique/catalogues/garnissage.py (docstring : filet a 3 mm du bord)",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "fil": {
+    "valeur": "lin_cire_055",
+    "unite": "texte",
+    "role": "Cle du fil dans catalogues.finitions.FILS.",
+    "choix": [
+     "lin_cire_055",
+     "polyester_cire_080",
+     "polyester_tresse_060"
+    ],
+    "statut": "a_valider",
+    "justification": "Lin cire 0,55 mm comme la sellerie fine Neogothique.",
+    "source": "neogothique/neogothique/catalogues/garnissage.py (sellier_fil = 0.55)",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "facteur_fil": {
+    "valeur": 4.0,
+    "unite": "",
+    "role": "Longueur de fil = facteur x longueur de couture (point sellier a deux aiguilles).",
+    "plage": [
+     2.5,
+     6.0
+    ],
+    "statut": "a_valider",
+    "justification": "Regle d'atelier courante (estimation non sourcee) ; a recaler sur un echantillon.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "marge_couture_percages": {
+    "valeur": 2.0,
+    "unite": "mm",
+    "role": "Distance mini entre la ligne de couture et un percage (trou, rivet, fente).",
+    "plage": [
+     1.0,
+     6.0
+    ],
+    "statut": "a_valider",
+    "justification": "Evite de fragiliser le pont de cuir entre couture et trou.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   }
+  },
+  "jonctions": {
+   "repli_boucle": {
+    "valeur": 30.0,
+    "unite": "mm",
+    "role": "Longueur de cuir repliee autour de la barre de boucle (cote boucle).",
+    "plage": [
+     20.0,
+     60.0
+    ],
+    "statut": "a_valider",
+    "justification": "Assez pour deux rivets ou une couture et loger le passant dans le repli.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "fixation_repli": {
+    "valeur": "rivets",
+    "unite": "texte",
+    "role": "Fixation du repli de boucle.",
+    "choix": [
+     "rivets",
+     "couture",
+     "rivets_et_couture"
+    ],
+    "statut": "a_valider",
+    "justification": "Rivets : demontable par un sellier et tres solide ; couture : plus fine. Voir docs/compromis.md.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "rivet": {
+    "valeur": "rivet_double_calotte_12",
+    "unite": "texte",
+    "role": "Cle du rivet dans catalogues.quincaillerie.RIVETS.",
+    "choix": [
+     "rivet_double_calotte_9",
+     "rivet_double_calotte_12",
+     "rivet_cuivre_contre_rivet"
+    ],
+    "statut": "a_valider",
+    "justification": "Double calotte : tete lisse des deux cotes (pas d'arete cote peau) ; tete 12 mm = tiges jusqu'a 14 mm pour la patte (empilement ~11,7 mm).",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "diametre_trou_rivet": {
+    "valeur": 3.0,
+    "unite": "mm",
+    "role": "Diametre de poinconnage pour la tige de rivet.",
+    "plage": [
+     2.0,
+     5.0
+    ],
+    "statut": "a_valider",
+    "justification": "Tige ~2,5-3 mm des rivets double calotte courants : a verifier sur la reference fournisseur.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "oeillet_diametre_interieur": {
+    "valeur": 5.0,
+    "unite": "mm",
+    "role": "Diametre interieur des oeillets (grammaires futures : harnais, laçages).",
+    "plage": [
+     3.0,
+     12.0
+    ],
+    "statut": "a_valider",
+    "justification": "Proposition a valider selon oeillets du fournisseur.",
+    "source": "",
+    "utilise_par": [
+     "harnais",
+     "colliers"
+    ]
+   }
+  },
+  "ardillon": {
+   "nb_trous": {
+    "valeur": 5,
+    "unite": "",
+    "role": "Nombre de trous d'ardillon (impair : le trou central = tour de la taille).",
+    "plage": [
+     3,
+     9
+    ],
+    "statut": "a_valider",
+    "justification": "5 trous x 15 mm = +/-30 mm de reglage, couvre la plage d'une taille.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "entraxe_trous": {
+    "valeur": 15.0,
+    "unite": "mm",
+    "role": "Entraxe des trous d'ardillon.",
+    "plage": [
+     10.0,
+     25.0
+    ],
+    "statut": "a_valider",
+    "justification": "Pas plus fin qu'une ceinture (~25 mm) : un poignet a besoin d'un reglage fin.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "diametre_trou": {
+    "valeur": 4.5,
+    "unite": "mm",
+    "role": "Diametre des trous d'ardillon.",
+    "plage": [
+     3.0,
+     7.0
+    ],
+    "statut": "a_valider",
+    "justification": "Ardillon de boucle 50 mm ~3,5-4 mm + jeu : a verifier sur la boucle retenue.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "bout_apres_dernier_trou": {
+    "valeur": 30.0,
+    "unite": "mm",
+    "role": "Longueur de pointe au-dela du dernier trou.",
+    "plage": [
+     15.0,
+     60.0
+    ],
+    "statut": "a_valider",
+    "justification": "Assez long pour rester engage dans le passant au trou le plus serre.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "longueur_fente": {
+    "valeur": 14.0,
+    "unite": "mm",
+    "role": "Longueur de la fente d'ardillon au pli de boucle.",
+    "plage": [
+     8.0,
+     25.0
+    ],
+    "statut": "a_valider",
+    "justification": "Laisse pivoter l'ardillon sans couper le pli.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   }
+  },
+  "extremites": {
+   "rayon_ratio": {
+    "valeur": 0.5,
+    "unite": "",
+    "role": "Rayon des extremites = ratio x largeur (0,5 = bout demi-rond).",
+    "plage": [
+     0.1,
+     0.5
+    ],
+    "statut": "a_valider",
+    "justification": "Bout demi-rond : aucune pointe ni coin vif.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "rayon_tranche": {
+    "valeur": 0.8,
+    "unite": "mm",
+    "role": "Rayon d'adoucissement des aretes de tranche (abat-carre / bisautage).",
+    "plage": [
+     0.3,
+     2.0
+    ],
+    "statut": "a_valider",
+    "justification": "Supprime l'arete vive ; donne par l'abat-carre n 1-2. Estimation d'atelier.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   }
+  },
+  "anneau_d": {
+   "present": {
+    "valeur": true,
+    "unite": "bool",
+    "role": "Ajoute un anneau D sur patte rivetee.",
+    "statut": "a_valider",
+    "justification": "Point d'attache (mousqueton, chaine).",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "reference": {
+    "valeur": "anneau_d_laiton_massif_6x30",
+    "unite": "texte",
+    "role": "Cle de l'anneau dans catalogues.quincaillerie.ANNEAUX.",
+    "choix": [
+     "anneau_d_inox_soude_5x25",
+     "anneau_d_inox_soude_6x30",
+     "anneau_d_laiton_massif_6x30",
+     "anneau_o_inox_soude_6x30"
+    ],
+    "statut": "a_valider",
+    "justification": "Laiton pour l'assortiment cognac ; charge estimee plus faible que l'inox soude (voir docs/compromis.md) : a valider.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "position": {
+    "valeur": "oppose_boucle",
+    "unite": "texte",
+    "role": "Position de la patte sur la bande.",
+    "choix": [
+     "oppose_boucle"
+    ],
+    "statut": "a_valider",
+    "justification": "A l'oppose de la boucle : la traction ne passe pas par l'ardillon.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "largeur_patte": {
+    "valeur": 25.0,
+    "unite": "mm",
+    "role": "Largeur de la patte qui tient l'anneau.",
+    "plage": [
+     12.0,
+     40.0
+    ],
+    "statut": "a_valider",
+    "justification": "Doit passer dans l'anneau (passage interieur) avec le jeu de tolerance.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "longueur_patte": {
+    "valeur": 70.0,
+    "unite": "mm",
+    "role": "Longueur developpee de la patte (avant repli autour de l'anneau).",
+    "plage": [
+     40.0,
+     110.0
+    ],
+    "statut": "a_valider",
+    "justification": "Repliee en deux : 35 mm = fil de l'anneau + deux rivets en ligne avec leurs marges.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "fixation_patte": {
+    "valeur": "rivets_et_couture",
+    "unite": "texte",
+    "role": "Fixation de la patte d'anneau sur la bande.",
+    "choix": [
+     "rivets",
+     "rivets_et_couture"
+    ],
+    "statut": "a_valider",
+    "justification": "Deux rivets seuls cisaillent sous la traction de retenue : couture sellier autour de la patte en plus.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "entraxe_rivets_patte": {
+    "valeur": 18.0,
+    "unite": "mm",
+    "role": "Entraxe longitudinal des deux rivets de la patte.",
+    "plage": [
+     10.0,
+     35.0
+    ],
+    "statut": "a_valider",
+    "justification": "Deux rivets en ligne : la patte ne pivote pas.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   }
+  },
+  "securite": {
+   "jeu_doigt": {
+    "valeur": 20.0,
+    "unite": "mm",
+    "role": "Surplus de circonference interieure par rapport au tour mesure (un doigt doit passer a plat).",
+    "plage": [
+     15.0,
+     40.0
+    ],
+    "statut": "a_valider",
+    "justification": "Un doigt a plat (~12-18 mm) sous la bande : surplus ~1,5-2 fois son epaisseur. Plancher 15 mm = pas d'effet garrot. Proche du jeu Aboutissants (20 mm).",
+    "source": "aboutissants/common/params_globaux.py (anthropometrie.jeu_circonference_manille = 20)",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "deverrouillage_rapide": {
+    "valeur": true,
+    "unite": "bool",
+    "role": "Une attache a ouverture rapide (mousqueton panique) est prevue entre l'anneau et le point d'ancrage.",
+    "statut": "a_valider",
+    "justification": "Recommandation de securite : liberer la personne en quelques secondes sans cle.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "effort_service": {
+    "valeur": 500.0,
+    "unite": "N",
+    "role": "Traction de service sur une menotte attachee.",
+    "plage": [
+     100.0,
+     3000.0
+    ],
+    "statut": "a_valider",
+    "justification": "Traction laterale de verification de l'Entrave, reprise telle quelle (a valider).",
+    "source": "neogothique/neogothique/parametres.py (charges.traction_manille = 500 N, a_valider)",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "coefficient_dynamique": {
+    "valeur": 1.5,
+    "unite": "",
+    "role": "Majoration a-coups.",
+    "plage": [
+     1.0,
+     4.0
+    ],
+    "statut": "a_valider",
+    "justification": "Valeur Neogothique.",
+    "source": "neogothique/neogothique/parametres.py (charges.coef_dynamique = 1.5)",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "coefficient_securite": {
+    "valeur": 4.0,
+    "unite": "",
+    "role": "Coefficient de securite sur la rupture du cuir et de la quincaillerie.",
+    "plage": [
+     2.0,
+     8.0
+    ],
+    "statut": "a_valider",
+    "justification": "gamma_cuir Neogothique.",
+    "source": "neogothique/neogothique/parametres.py (charges.gamma_cuir = 4)",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "rayon_mini_extremite": {
+    "valeur": 5.0,
+    "unite": "mm",
+    "role": "Rayon mini des coins d'extremite (aucun coin vif).",
+    "plage": [
+     2.0,
+     20.0
+    ],
+    "statut": "a_valider",
+    "justification": "Un coin de cuir de 3,5 mm peut griffer ; 5 mm mini. Proposition.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   }
+  },
+  "finition": {
+   "teinte": {
+    "valeur": "cognac",
+    "unite": "texte",
+    "role": "Teinte du cuir (cle de catalogues.cuirs.TEINTES).",
+    "choix": [
+     "cognac",
+     "noir",
+     "tan",
+     "havane",
+     "brun_fonce",
+     "bordeaux",
+     "vert_bouteille",
+     "bleu_nuit"
+    ],
+    "statut": "a_valider",
+    "justification": "Cognac = cuir de reference Equinox.",
+    "source": "",
+    "utilise_par": [
+     "tous"
+    ]
+   },
+   "quincaillerie": {
+    "valeur": "laiton_massif_cw510l",
+    "unite": "texte",
+    "role": "Metal de la quincaillerie (cle de catalogues.quincaillerie.METAUX).",
+    "choix": [
+     "inox_316",
+     "inox_316_pvd_noir",
+     "laiton_massif_cw510l",
+     "laiton_patine",
+     "acier_nickele"
+    ],
+    "statut": "a_valider",
+    "justification": "Laiton avec cognac (regle d'assortiment) ; laiton sans plomb pour le contact peau (Equinox).",
+    "source": "",
+    "utilise_par": [
+     "tous"
+    ]
+   },
+   "tranche": {
+    "valeur": "teintee_lissee_cire",
+    "unite": "texte",
+    "role": "Finition de tranche (cle de catalogues.finitions.TRANCHES).",
+    "choix": [
+     "brute",
+     "teintee_lissee_cire",
+     "peinte_edge_paint",
+     "rembordee"
+    ],
+    "statut": "a_valider",
+    "justification": "Tranches teintees et lustrees comme la sellerie fine Neogothique.",
+    "source": "",
+    "utilise_par": [
+     "tous"
+    ]
+   },
+   "fermeture": {
+    "valeur": "boucle_ardillon",
+    "unite": "texte",
+    "role": "Systeme de fermeture (cle de catalogues.fermetures.FERMETURES).",
+    "choix": [
+     "boucle_ardillon",
+     "boucle_ardillon_cadenas",
+     "mousqueton",
+     "scratch"
+    ],
+    "statut": "a_valider",
+    "justification": "Boucle a ardillon : reglable, fiable, ouverture rapide sans cle.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   },
+   "boucle": {
+    "valeur": "boucle_rouleau_50_laiton",
+    "unite": "texte",
+    "role": "Cle de la boucle (catalogues.quincaillerie.BOUCLES).",
+    "choix": [
+     "boucle_rouleau_50_laiton",
+     "boucle_rouleau_50_inox",
+     "boucle_rouleau_60_laiton",
+     "boucle_rouleau_60_inox",
+     "boucle_verrouillable_50_inox"
+    ],
+    "statut": "a_valider",
+    "justification": "Passage 50 mm = largeur de bande poignet.",
+    "source": "",
+    "utilise_par": [
+     "menottes"
+    ]
+   }
+  }
+ }
+}

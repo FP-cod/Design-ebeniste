@@ -1,0 +1,4 @@
+{
+  "_aide": "Surcharges utilisateur GammeCuir : memes chemins que les defauts (section.parametre: valeur). Laisser vide = valeurs par defaut. Exemple : {\"finition.teinte\": \"noir\", \"finition.quincaillerie\": \"inox_316\", \"produit.membre\": \"cheville\"}",
+  "surcharges": {}
+}

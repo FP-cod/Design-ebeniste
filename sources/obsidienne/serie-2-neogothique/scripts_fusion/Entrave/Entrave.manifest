@@ -1,0 +1,10 @@
+{
+  "autodeskProduct": "Fusion360",
+  "type": "script",
+  "author": "Gamme Neogothique",
+  "description": {
+    "": "Entrave cou-poignets parametrique (gamme Neogothique v0.2 raffinee) : platine noyer moulee, pieds-colonnes a chanfreins arretes et cremailleres synchronisees, ceintures ajourees, pentures forgees, manilles cuir sellier sur pivots."
+  },
+  "supportedOS": "windows|mac",
+  "editEnabled": true
+}
