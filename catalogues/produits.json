@@ -7,35 +7,43 @@
         {
           "id": "serie-1",
           "nom": "Banc Feuille",
-          "statut": "en_cours",
           "typologies": [
             {
               "id": "banc_feuille",
               "nom": "Banc Feuille",
-              "nommage": "Le code local utilise l’identifiant banc_flore (/workspace/equinox)."
+              "nommage": "Le code local utilise l’identifiant banc_flore (/workspace/equinox).",
+              "statut": null,
+              "preuves": []
             },
             {
               "id": "croix_saint_andre",
-              "nom": "Croix de Saint-André"
+              "nom": "Croix de Saint-André",
+              "statut": null,
+              "preuves": []
             },
             {
               "id": "chaise_trone",
-              "nom": "Chaise trône"
+              "nom": "Chaise trône",
+              "statut": null,
+              "preuves": []
             },
             {
               "id": "tabouret",
-              "nom": "Tabouret"
+              "nom": "Tabouret",
+              "statut": null,
+              "preuves": []
             }
           ]
         },
         {
           "id": "serie-2",
           "nom": "Néogothique",
-          "statut": "en_cours",
           "typologies": [
             {
               "id": "entrave",
-              "nom": "Entrave"
+              "nom": "Entrave",
+              "statut": null,
+              "preuves": []
             }
           ]
         }
@@ -71,5 +79,48 @@
       "description": "Ports Vac-U-Lock, NPT 1\", machines, collecteurs, points d’ancrage",
       "series": []
     }
-  }
+  },
+  "circuit_etapes": [
+    {
+      "numero": 1,
+      "etape": "benchmark",
+      "statut": null
+    },
+    {
+      "numero": 2,
+      "etape": "design_valide",
+      "statut": "design_valide"
+    },
+    {
+      "numero": 3,
+      "etape": "faisabilite_ok",
+      "statut": "faisabilite_ok"
+    },
+    {
+      "numero": 4,
+      "etape": "normes_ok",
+      "statut": "normes_ok"
+    },
+    {
+      "numero": 5,
+      "etape": "script_ok",
+      "statut": "script_ok"
+    },
+    {
+      "numero": 6,
+      "etape": "debit_ok",
+      "statut": "debit_ok"
+    },
+    {
+      "numero": 7,
+      "etape": "go_marche",
+      "statut": "go_marche"
+    },
+    {
+      "numero": 8,
+      "etape": "produit",
+      "statut": "produit"
+    }
+  ],
+  "regle_statut": "Statut stocké sur chaque typologie (et plus tard sur chaque référence commerciale), jamais sur une série. Statut affiché d'une série = étape de sa typologie la moins avancée, ou null si l'une est null. Aucun statut sans preuve. Statut d'une typologie = plus haute étape 2 à 8 prouvée de façon contiguë. L'étape 1 (benchmark) s'enregistre en preuve sans conférer de statut."
 }
