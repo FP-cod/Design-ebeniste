@@ -6,12 +6,13 @@
       "series": [
         {
           "id": "serie-1",
-          "nom": "Banc Feuille",
+          "nom": "Banc Équinox",
           "typologies": [
             {
-              "id": "banc_feuille",
-              "nom": "Banc Feuille",
-              "nommage": "Le code local utilise l’identifiant banc_flore (/workspace/equinox).",
+              "id": "banc_equinox",
+              "nom": "Banc Équinox",
+              "aliases": ["banc_feuille", "banc_flore"],
+              "nommage": "Renommé Banc Équinox par Fabien le 26/11/2026 ; anciens identifiants banc_feuille (catalogue) et banc_flore (code sources : sources/obsidienne/serie-1-banc-feuille/).",
               "statut": null,
               "preuves": []
             },

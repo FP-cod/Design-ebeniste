@@ -39,7 +39,7 @@ Dans `catalogues/produits.json`, chaque typologie a un tableau `preuves`. Une en
 {
   "numero_etape": 1,
   "etape": "benchmark",
-  "preuve": "preuves/obsidienne/banc_feuille/1_benchmark_2026-11-23.md",
+  "preuve": "preuves/obsidienne/banc_equinox/1_benchmark_2026-11-23.md",
   "date": "2026-11-23",
   "valide_par": "Fabien Petrot"
 }
@@ -63,7 +63,7 @@ preuves/
       <numero>_<etape>_<date>.md
 ```
 
-- `<gamme>` et `<typologie>` reprennent les identifiants du catalogue (`obsidienne`, `banc_feuille`, `entrave`, etc.).
+- `<gamme>` et `<typologie>` reprennent les identifiants du catalogue (`obsidienne`, `banc_equinox`, `entrave`, etc.).
 - `<numero>` est le numéro d'étape, sans zéro forcé ou avec deux chiffres, mais de façon homogène : recommandation `1` … `8` telle quelle, ou `01` … `08` si l'on préfère le tri lexicographique ; une fois le premier fichier déposé, on conserve le même schéma.
 - `<etape>` est l'identifiant technique (`benchmark`, `design_valide`, …).
 - `<date>` est au format `AAAA-MM-JJ`.
@@ -71,8 +71,8 @@ preuves/
 Exemples (fichiers non créés à ce jour) :
 
 ```
-preuves/obsidienne/banc_feuille/1_benchmark_2026-11-23.md
-preuves/obsidienne/banc_feuille/2_design_valide_2026-12-01.md
+preuves/obsidienne/banc_equinox/1_benchmark_2026-11-23.md
+preuves/obsidienne/banc_equinox/2_design_valide_2026-12-01.md
 preuves/obsidienne/entrave/2_design_valide_2026-12-01.md
 ```
 

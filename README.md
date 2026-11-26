@@ -15,7 +15,7 @@ Les séries sont ajoutées au fur et à mesure des itérations de design.
 
 | Gamme | Style | Séries |
 |-------|-------|--------|
-| **Obsidienne** | Salles de jeux dédiées | Série 1 : Banc Feuille (typologies : banc_feuille — le code local utilise banc_flore —, croix de Saint-André, chaise trône, tabouret) · Série 2 : Néogothique (Entrave) |
+| **Obsidienne** | Salles de jeux dédiées | Série 1 : Banc Équinox (typologies : banc_equinox — anciens identifiants banc_feuille, banc_flore —, croix de Saint-André, chaise trône, tabouret) · Série 2 : Néogothique (Entrave) |
 | **Opale** | Dissimulés / transformables (pièces de vie) | À définir |
 | **Onyx** | Pliables, cachés sous le lit | À définir |
 | **Magnétite** | Accessoires (liens, colliers, floggers, menottes, harnais) | À définir |
