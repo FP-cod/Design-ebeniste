@@ -49,3 +49,5 @@ Le catalogue commercial est [`catalogues/produits.json`](catalogues/produits.jso
 Le circuit compte 8 étapes. L'étape 1 (Benchmark) produit une preuve mais ne confère aucun statut. Les statuts des étapes 2 à 8 sont `design_valide`, `faisabilite_ok`, `normes_ok`, `script_ok`, `debit_ok`, `go_marche` et `produit`. Aucun statut sans preuve écrite correspondante. Le statut d'une typologie est celui de la plus haute étape 2 à 8 prouvée de façon contiguë. `design_valide` exige un visa écrit de Fabien (une cote dans le code ne compte pas) ; `produit` exige un dossier technique GPSR complet. À ce jour, toutes les typologies ont `"statut": null` et `"preuves": []`.
 
 Le référentiel `circuit_etapes` et la règle courte `regle_statut` figurent à la racine de `catalogues/produits.json`. Le détail des conventions, le format d'une preuve et l'arborescence des fichiers sont dans [`preuves/README.md`](preuves/README.md).
+
+On vérifie le catalogue avec `python3 catalogues/outils/valider_catalogue.py`.

@@ -77,3 +77,18 @@ preuves/obsidienne/entrave/2_design_valide_2026-12-01.md
 ```
 
 Pour une référence commerciale, lorsqu'elle existera, on pourra ajouter un niveau `<reference>/` sous la typologie, sans changer le reste de la convention.
+
+## Dossier technique GPSR (`dossier_gpsr`)
+
+Le statut `produit` (étape 8) exige, en plus des preuves contiguës des étapes 2 à 8, un champ `"dossier_gpsr"` sur la typologie ou la référence. Sa valeur est un **chemin relatif** depuis la racine du dépôt vers un fichier existant du dossier technique GPSR complet.
+
+Emplacement recommandé :
+
+```
+preuves/<gamme>/<typologie>/dossier_gpsr/<fichier>
+preuves/<gamme>/<typologie>/<reference>/dossier_gpsr/<fichier>
+```
+
+Exemple : `preuves/obsidienne/banc_equinox/dossier_gpsr/dossier_technique.md`.
+
+Le validateur `catalogues/outils/valider_catalogue.py` contrôle cette règle, ainsi que le format des preuves et la cohérence des statuts.

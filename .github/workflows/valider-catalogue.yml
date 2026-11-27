@@ -1,0 +1,26 @@
+name: Valider le catalogue
+
+on:
+  push:
+    paths:
+      - "catalogues/**"
+      - "preuves/**"
+      - ".github/workflows/valider-catalogue.yml"
+  pull_request:
+    paths:
+      - "catalogues/**"
+      - "preuves/**"
+      - ".github/workflows/valider-catalogue.yml"
+
+jobs:
+  valider:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Tests du validateur
+        run: python3 -m unittest discover -s catalogues/outils/tests -v
+      - name: Validation du catalogue
+        run: python3 catalogues/outils/valider_catalogue.py
